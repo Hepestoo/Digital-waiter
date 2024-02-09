@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/añadir.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        <ul>
+            <li>
+                <button id="sidebar-button">
+                    <img src="/img/iconocasa.png" alt="restaurante">Mi restaurante
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+
+        <h1>Creacion de Restaurantes</h1>
+
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+        <div id="lineahorizontal"></div>
+
+        <div id="card-container">
+            <div id="card1">
+                {{#each lista}}
+                <form action="/tienda/editar/{{idRestaurante}}" method="post">
+
+                    <label for="nombre">Nombre del restaurante</label><br>
+                    <input type="text" id="name" name="restaurantName" value="{{restaurantName}}" placeholder="Ingrese el nombre del restaurante">
+                    <label for="location">Ubicacion del restaurante</label><br>
+                    <input type="text" id="location" name="location" value="{{location}}" placeholder="Ingrese la ubicacion del restaurante">
+
+                    {{!-- <div id="subir-archivo">
+                        <label for="logo">Logo de Restaurante:</label>
+                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
+                        <h3>Subir una imagen 
+                            <input type="file" name="imageRestaurant" value="{{imageRestaurant}}" id="inputImagen" accept="images/*" required> 
+                            <label for="inputImagen">Cargar imagen</label></h3>
+                    </div> --}}
+
+                    <div id="tipo-de-comida">
+                        <label for="tipoComida">Tipo de Comida:</label>
+                        <select id="tipoComida" name="tipoComida">
+                            <option value="Tradicional">Tradicional</option>
+                            <option value="Americana">Americana</option>
+                            <option value="Asiatica">Asiatica</option>
+                            <option value="Mediterranea">Mediterranea</option>
+                        </select>
+                    </div>
+
+                    <button id="listo-btn" type="submit">Listo!</button>
+                </form>
+                {{/each}}
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+

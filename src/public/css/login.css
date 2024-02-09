@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 10), transparent), url(../img/iniciosesion.JPG);
+    background-size: cover;
+    z-index: 1; /* Coloca la imagen de la izquierda debajo de la capa oscura */
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%; /* Ancho del desvanecimiento de la imagen de la derecha */
+    height: 100%;
+    background: url(../img/fondo.png);
+    background-size: cover;
+    z-index: 1; /* Coloca la imagen de la derecha debajo de la capa oscura de la izquierda */
+    opacity: 4%;
+}
+
+#seccion-izquierda {
+    text-align: left;
+    padding-left: 60px;
+    position: relative;
+    z-index: 3; /* Coloca el contenido de la izquierda encima de la capa oscura */
+}
+#seccion-izquierda h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFBF0;
+    font-size: 80px;
+    padding-bottom: 200px;
+}
+
+#seccion-izquierda h3 {
+    color: #FFFBF0;
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 80px;
+}
+
+#seccion-derecha {
+    text-align: left;
+    z-index: 3; /* Coloca la derecha encima de la capa oscura */
+}
+
+#seccion-derecha h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    margin-top: -50px; /* Ajusta el margen superior según tus necesidades */
+    text-align: center;
+    margin-left: -350px;
+}
+form {
+    margin-top: 100px; /* Ajusta el margen superior del formulario según tus necesidades */
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: 20px; /* Ajusta el tamaño de la fuente de las etiquetas según tus necesidades */
+    margin-bottom: -3px; /* Ajusta el margen inferior de las etiquetas según tus necesidades */
+    margin-left: -250px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    font-family: 'Montserrat', sans-serif;
+    width: 400px; /* Ocupa el 100% del ancho disponible */
+    padding: 13px; /* Ajusta el relleno según tus necesidades */
+    font-size: 18px; /* Ajusta el tamaño de la fuente según tus necesidades */
+    margin-bottom: 20px;
+    margin-left: -250px;
+    border: none;
+    background-color: #C0C0C0;
+    border-radius: 5px;
+}
+#seccion-derecha p a{
+    font-family: 'Montserrat', sans-serif;
+    align-items: right;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 60px;
+}
+#seccion-derecha button {
+    background-color: #F3DBC3;
+    border: none;
+    font-size: 16px; /* Ajusta el tamaño de la fuente del botón según tus necesidades */
+    padding: 15px 60px; /* Ajusta el relleno del botón según tus necesidades */
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+#seccion-derecha button a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bebidasListar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Lista de Bebidas</h1>
+
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+        <div id="lineahorizontal"></div>
+
+        <div id="plato-tarjeta">
+            <h1>Bebidas</h1>
+            <a href="/crearMenu"><img src="../img/atras.png"></a>
+
+            <form action="bebidas/listar/" method="get"></form>
+
+            <div id="tarjetas-contenedor"> <!-- Nuevo contenedor para las tarjetas -->
+                {{#each lista}}
+                <center>
+                <div id="tarjeta">
+                    <b>Nombre:</b>
+                    <p>{{nombre}}</p><br>
+                    <b>Descripcion:</b>
+                    <p>{{descripcion}}</p><br>
+                    <b>Precio:</b>
+                    <p>{{precio}}</p><br>
+                    <b>Estado:</b>
+                    <p>{{estado}}</p><br>
+                    <a href="/bebidas/editar/{{idBebidas}}"><button type="submit">Editar</button></a>
+                </div>
+                </center>
+                {{/each}}
+            </div>
+        </div>
+
+        </div>
+    </div>
+</body>
+</html>

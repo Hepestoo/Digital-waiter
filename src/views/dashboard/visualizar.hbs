@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/visualizar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+        
+
+        <div id="user-info">
+            <a href="/principal"><img src="../img/iconocasa.png"></a>
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+    </div>
+
+    <div id="container">
+      <h1>Previa del menú</h1>
+      <form action="/dashboard/visualizar" method="get">
+        <h2>Entradas</h2>
+        {{#each lista1}}
+          <p>{{nombre}}</p>
+          <p>{{descripcion}}</p>
+          <p>{{precio}}</p>
+        {{/each}}
+
+        <h2>Bebidas</h2>
+        {{#each lista2}}
+          <p>{{nombre}}</p>
+          <p>{{descripcion}}</p>
+          <p>{{precio}}</p>
+        {{/each}}
+
+        <h2>Postres</h2>
+        {{#each lista3}}
+          <p>{{nombre}}</p>
+          <p>{{descripcion}}</p>
+          <p>{{precio}}</p>
+        {{/each}}
+
+        <h2>Sopas</h2>
+        {{#each lista4}}
+          <p>{{nombre}}</p>
+          <p>{{descripcion}}</p>
+          <p>{{precio}}</p>
+        {{/each}}
+
+      </form>
+    </div>
+
+</body>
+</html>

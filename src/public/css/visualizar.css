@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body::after {
+    content: "";
+    background: url(../img/fondo.png);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #F3DBC3;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+}
+#sidebar h1 {
+    font-size: 39px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    font-weight: 900;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-align: center;
+    cursor: pointer;
+}
+#sidebar ul li:last-child {
+    border-bottom: none;
+}
+#main-content {
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#visualizar-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left; /* Cambia 'center' por 'left' */
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    border-bottom: 1px solid #333333;
+}
+#dashboard-button,
+#menu-button,
+#metodos-button,
+#carrito-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    background-color: transparent;
+    border: none;
+}
+#dashboard-button img,
+#menu-button img,
+#carrito-button img,
+#metodos-button img,
+#visualizar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+
+#dashboard-button a,
+#menu-button a,
+#carrito-button a,
+#metodos-button a,
+#visualizar-button a{
+    text-decoration: none;
+    color: #333333;
+}
+#logoizquierdo{
+    width: 250px;
+    height: 60px;
+    margin-top: 100px;
+}
+
+#user-info {
+    align-items: right;
+    text-align: left;
+}
+#user-info h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 850px;
+    margin-top: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 850px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info a img{
+    margin-left: 740px;
+    margin-top: 40px;
+    height: 23px;
+    width: 23px;
+}
+#user-info img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: 785px;
+    margin-top: 25px;
+}
+/*tablas grandes*/
+#container{
+    width: 1050px;
+    height: 660px;
+    margin: auto; /* Esto centra horizontalmente */
+    margin-left: 350px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Dashboard</h1>
+
+        <div id="user-info">
+            <a href="/"><img src="../img/iconocasa.png"></a>
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+        
+    </div>
+
+    <div id="franja">
+        <div id="welcome-message">
+            <h1>Bienvenido,</h1>
+            <h2>Administrador</h2>
+            <p>Esto es lo que te espera hoy!</p>
+        </div>
+    </div>
+
+    <div id="publicidad1">
+        <h1>Nuestros productos estrella</h1>
+        <div>
+            <img src="../img/coctelespubli.png">
+        </div>
+    </div>
+
+    <div id="info-buttons">
+            <div id="pedidos-dia">
+                <button><a href="/formulario"><img src="/img/pedidosicono.png" alt="icon">Pedidos en el día<br>55</a></button>
+            </div>
+            <div id="pedidos-anulados">
+                <button><a href="/formulario"><img src="/img/rechazadoicono.png" alt="icon">Pedidos anulados<br>55</a></button>
+            </div>
+            <div id="pedidos-entregados">
+                <button><a href="/formulario"><img src="/img/entregadoicono.png" alt="icon">Pedidos entregados<br>55</a></button>
+            </div>
+            <div id="pedidos-pendientes">
+                <button><a href="/formulario"><img src="/img/pendienteicono.png" alt="icon">Pedidos pendientes<br>55</a></button>
+            </div>
+    </div>
+
+    <div id="publicidad2">
+    <div>
+        <h1>Proximamente</h1>
+        <h2>-50% off</h2>
+        <h4>(solo en digital waiter)</h4>
+    </div>
+    <div>
+        <img src="../img/hamburger.png">
+    </div>
+    </div>
+
+    <div id="gestion">
+        <h1>Gestion de pedidos</h1>
+        <h3>Aqui puedes gestionar los pedidos del restaurante con sus limitantes</h3>
+        <div>
+            <button><a href="/carrito/listar">Ver</a></button>
+        </div>
+    </div>
+
+    <div id="menus">
+        <h1>Menus</h1>
+        <div id="card1">
+            <h1>Entradas</h1>
+            <button><a href="/entradas/listar">Ver</a></button>
+        </div>
+        <div id="card2">
+            <h1>Sopas</h1>
+            <button><a href="/sopas/listar">Ver</a></button>
+        </div>
+        <div id="card3">
+            <h1>Postres</h1>
+            <button><a href="/postres/listar">Ver</a></button>
+        </div>
+        <div id="card4">
+            <h1>Bebidas</h1>
+            <button><a href="/bebidas/listar">Ver</a></button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/formulariomenu.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion del menu
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Creacion de la Entrada</h1>
+
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+        <div id="lineahorizontal"></div>
+
+        <div id="card-container">
+            <a href="/bebidas/listar"><img src="/img/atras.png"></a>
+            <div id="card1">
+                {{#each lista}}
+                <form action="/bebidas/editar/{{idBebidas}}" method="post"> 
+                    <label for="nombre">Nombre de la entrada</label><br>
+                    <input type="text" id="name" name="nombre" value="{{nombre}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
+                    title="Solo se permiten letras y espacios" placeholder="Ingrese el nombre del plato" required>
+                    <label for="location">Precio ($)</label><br>
+                    <input type="text" id="location" name="precio" pattern="\d+\.\d{1,2}" 
+                    title="Ingrese en precio correcto Ejemplo: 10.0" value="{{precio}}" placeholder="Ingrese el precio del plato" required>
+                    <label for="location">Estado</label><br>
+                    <input type="text" id="location" name="estado" pattern="(activo|desactivo)" 
+                    title="Solo se admite: asctivo o desactivo" value="{{estado}}" placeholder="Ingrese el precio del plato" required>
+
+                    {{!-- <div id="subir-archivo">
+                        <label for="logo">Imagen:</label>
+                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
+                        <h3>Subir una imagen 
+                            <input type="file" name="imageRestaurant" id="inputImagen" accept="images/*"> 
+                            <label for="inputImagen">Cargar imagen</label></h3>
+                    </div> --}}
+
+                    {{!-- <div id="tipo-de-comida">
+                        <label for="tipoComida">Categoria:</label>
+                        <select id="tipoComida" name="categoria">
+                            <option value="Entradas">Entradas</option>
+                            <option value="Sopas">Sopas</option>
+                            <option value="Postros">Postres</option>
+                            <option value="Snacks">Snacks</option>
+                        </select>
+                    </div> --}}
+                    <br>
+                    <button id="listo-btn" type="submit">Guardar</button>
+
+                </form>
+                {{/each}}
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+

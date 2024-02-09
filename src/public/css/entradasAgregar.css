@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body::after {
+    content: "";
+    background: url(../img/fondo.png);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #F3DBC3;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+}
+#sidebar h1 {
+    font-size: 39px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    font-weight: 900;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-align: center;
+    cursor: pointer;
+}
+#sidebar ul li:last-child {
+    border-bottom: none;
+}
+#sidebar-button {
+    background-color: #FFFBF0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 15px 50px;
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+}
+#sidebar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+#main-content {
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#main-content h1 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#menu-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left; /* Cambia 'center' por 'left' */
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    border-bottom: 1px solid #333333;
+}
+#dashboard-button,
+#carrito-button,
+#metodos-button,
+#visualizar-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    background-color: transparent;
+    border: none;
+}
+#dashboard-button img,
+#menu-button img,
+#carrito-button img,
+#metodos-button img,
+#visualizar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+#dashboard-button a,
+#menu-button a,
+#carrito-button a,
+#metodos-button a,
+#visualizar-button a{
+    text-decoration: none;
+    color: #333333;
+}
+#logoizquierdo{
+    width: 250px;
+    height: 60px;
+    margin-top: 100px;
+}
+#lineahorizontal{
+    background-color: #000000;
+    border-top: 2px solid black;
+    margin: 20px 0 0 -20px;
+    width: 1181px;
+    float: center;
+}
+#user-info {
+    align-items: right;
+    text-align: left;
+}
+#user-info h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 850px;
+    margin-top: -70px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 850px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info img {
+    width: 50px;
+    height: 50px;
+    margin-left: 785px;
+    margin-top: -70px;
+}
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+#card1 {
+    background-image: url(../img/fondoformulario.png), linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
+    background-blend-mode: lighten;
+    background-size: cover; /* Para que la imagen cubra todo el div */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; 
+    margin-top: 30px;
+    margin-left: 100px;
+    width: 900px;
+    height: 650px;
+    box-sizing: border-box;
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-radius: 20px;
+    padding: 20px; /* Añade un poco de espacio interno para mayor legibilidad */
+}
+
+#card1 form {
+    margin-top: 10px; /* Ajusta el margen superior del formulario según tus necesidades */
+    margin-left: 40px;
+}
+
+#card1 label {
+    display: block;
+    font-size: 30px; /* Ajusta el tamaño de la fuente de las etiquetas según tus necesidades */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #F5F5DC;
+}
+
+#card1 input {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E3E2E2;
+    width: 89%; /* Ajusta el ancho de los inputs para que ocupen todo el contenedor */
+    height: 50px;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-top: -30px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+}
+#listo-btn{
+    font-family: 'Montserrat', sans-serif;
+    width: 300px;
+    height: 60px;
+    display: block;
+    margin-left: 250px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #0085FF;
+    font-size: 30px;
+    color: #FFFFFF;
+}

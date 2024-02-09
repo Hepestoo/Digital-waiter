@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/añadir.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+        <ul>
+            <li>
+                <button id="sidebar-button">
+                    <img src="/img/iconocasa.png" alt="restaurante">Mi restaurante
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+        <h1>Creacion de Menus</h1>
+        <div id="lineahorizontal"></div>
+
+        <div id="card-container">
+            <div id="card1">
+
+                <form method="post">
+
+                    <label for="nombre">Nombre del restaurante</label><br>
+                    <input type="text" id="name" name="name" placeholder="Ingrese el nombre del restaurante">
+                    <label for="location">Ubicacion del restaurante</label><br>
+                    <input type="text" id="location" name="location" placeholder="Ingrese la ubicacion del restaurante">
+
+                    <div id="subir-archivo">
+                        <label for="logo">Logo de Restaurante:</label>
+                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen" width="100px" height="90px">
+                        <h3>Subir una imagen <input type="file" id="inputImagen" style="display: none;"> <label for="inputImagen">Cargar imagen</label></h3>
+
+                    </div>
+
+                    <div id="tipo-de-comida">
+                        <label for="tipoComida">Tipo de Comida:</label>
+                        <select id="tipoComida" name="tipoComida">
+                            <option value="opcion1">Tradicional</option>
+                            <option value="opcion2">Americana</option>
+                            <option value="opcion3">Asiatica</option>
+                            <option value="opcion3">Mediterranea</option>
+                        </select>
+                    </div>
+
+                    <button id="listo-btn" type="submit">Listo!</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+

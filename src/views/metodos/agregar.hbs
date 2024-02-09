@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/metodosAgregar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/menuListar">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Metodos de pago</h1>
+        
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+    </div>
+
+    <div id="lineahorizontal"></div>
+
+    <div id="card-general">
+        <a href="/metodos"><img src="../img/atras.png"></a>
+
+        <form action="/metodos/agregar" method="post">
+
+            <label for="nombre">Metodo de pago</label><br>
+            <input type="text" id="name" name="metodoPago" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
+                    title="Solo se permiten letras y espacios" placeholder="Ingrese el nombre del metodo de pago"><br>
+                    <label for="nombre">Estado</label><br>
+            <input type="text" id="location" name="estado" pattern="(activo|desactivo|pendiente)" title="Solo se admite: activo, desactivo o pendiente"
+                    placeholder="Ingrese el estado" required>
+            {{!-- <div id="estado">
+            <h1>Estado</h1>
+
+                <div id="activo">
+        <label for="activo">Activo</label>
+        <input type="radio" name="estado" value="activo">
+                </div>
+
+                <div id="inactivo">
+        <label for="inactivo">Inactivo</label>
+        <input type="radio" name="estado" value="inactivo">
+                </div>
+
+                <div id="pendiente">
+        <label for="pendiente">Pendiente</label>
+        <input type="radio" name="estado" value="pendiente">
+                </div>
+            </div> --}}
+
+            <button id="listo-btn" type="submit">Guardar</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

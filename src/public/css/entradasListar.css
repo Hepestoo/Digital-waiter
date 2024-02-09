@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body::after {
+    content: "";
+    background: url(../img/fondo.png);
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #F3DBC3;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+}
+#sidebar h1 {
+    font-size: 39px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    font-weight: 900;
+}
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#sidebar ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    text-align: center;
+    cursor: pointer;
+}
+#sidebar ul li:last-child {
+    border-bottom: none;
+}
+#sidebar-button {
+    background-color: #FFFBF0;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 15px 50px;
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+}
+#sidebar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+#main-content {
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#main-content h1 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+#menu-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left; /* Cambia 'center' por 'left' */
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    border-bottom: 1px solid #333333;
+}
+#dashboard-button,
+#carrito-button,
+#metodos-button,
+#visualizar-button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    border-radius: 0 10px 10px 0;
+    color: #333333;
+    width: 250px;
+    height: 60px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 29px;
+    background-color: transparent;
+    border: none;
+}
+#dashboard-button img,
+#menu-button img,
+#carrito-button img,
+#metodos-button img,
+#visualizar-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: -20px;
+}
+#dashboard-button a,
+#menu-button a,
+#carrito-button a,
+#metodos-button a,
+#visualizar-button a{
+    text-decoration: none;
+    color: #333333;
+}
+#logoizquierdo{
+    width: 250px;
+    height: 60px;
+    margin-top: 100px;
+}
+#lineahorizontal{
+    background-color: #000000;
+    border-top: 2px solid black;
+    margin: 20px 0 0 -20px;
+    width: 1181px;
+    float: center;
+}
+#user-info {
+    align-items: right;
+    text-align: left;
+}
+#user-info h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 850px;
+    margin-top: -70px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info p {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 850px;
+    font-family: 'Montserrat', sans-serif;
+}
+#user-info img {
+    width: 50px;
+    height: 50px;
+    margin-left: 785px;
+    margin-top: -70px;
+}
+#plato-tarjeta{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 650px;
+    width: 1000px;
+}
+
+#plato-tarjeta h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#plato-tarjeta  a{
+    text-decoration: none;
+}
+#plato-tarjeta img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 550px;
+    margin-left: -50px;
+}
+#tarjetas-contenedor { /* Nuevo estilo para el contenedor de las tarjetas */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 600px;
+}
+
+#tarjeta{
+    background-color: #C9BAEB;
+    margin-top: 10px;
+    height: 260px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 10px;
+}
+#tarjeta button{
+    background-color: #0085FF;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    display: block; /* Añade esta línea */
+    margin: auto;
+    cursor: pointer;
+}
+#tarjeta p{
+    text-align: center;
+    margin-top: -5px;
+    display: inline-block;
+}
+#tarjeta a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+#tarjeta b{
+    margin-left: 10px;
+}

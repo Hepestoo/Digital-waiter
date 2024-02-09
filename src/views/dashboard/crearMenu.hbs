@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menuListar.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1><br>
+
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar/estado">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Creacion de Menus</h1>
+
+        <div id="user-info">
+            <a href="/principal"><img src="../img/iconocasa.png"></a>
+            <img src="/img/usuarioicono.png">
+            <h2>Digital Waiter</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+        <div id="lineahorizontal"></div>
+
+        <div id="card-container">
+            <div id="card1">
+                <h1>Entradas</h1>
+                <button><a href="/entradas/agregar">Agregar</a></button>
+                <div id="ver-todos">
+                    <button><a href="/entradas/listar">Ver todos</a></button>
+                </div>
+                
+            </div>
+            <div id="card2">
+                <h1>Sopas</h1>
+                <button><a href="/sopas/agregar">Agregar</a></button>
+                <div id="ver-todos">
+                    <button><a href="/sopas/listar">Ver todos</a></button>
+                </div>
+            </div>
+            <div id="card3">
+                <h1>Postres</h1>
+                <button><a href="/postres/agregar">Agregar</a></button>
+                <div id="ver-todos">
+                    <button id="ver-todos"><a href="/postres/listar">Ver todos</a></button>
+                </div>
+            </div>
+            <div id="card4">
+                <h1>Bebidas</h1>
+                <button><a href="/bebidas/agregar">Agregar</a></button>
+                <div id="ver-todos">
+                    <button><a href="/bebidas/listar">Ver todos</a></button>
+                </div>
+            </div>
+            {{!-- <form action="menu/agregar/"method="post"></form>
+            <form action="menu/editar/"method="post"></form>
+            <form action="menu/listar/"method="get"></form>
+<table class="tabla-registros">
+        <h1>Lista de Objeto</h1>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Número de serie</th>
+                <th>Número de contacto</th>
+                <th>Correo electrónico</th>
+                <th>Fecha de pérdida</th>
+                <th>Hora de pérdida</th>
+                <th>Ubicación de pérdida</th>
+                <th>color</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+                <tr>
+                    <td>{{nombreMenu}}</td>
+                    <td>{{precioMenu}}</td>
+                    <td>{{categoria}}</p>
+                        <td>{{imageMenu}}</td>
+                    <td>
+                        <a href="/objeto/editar/{{idMenu}}">
+                            <button class="login" type="button">Editar</button>
+                        </a>
+                        <a href="/objeto/eliminar/{{idMenu}}">
+                            <button type="button" class="atras" style="background-color: red;">Eliminar</button>
+                        </a>
+                    
+                    </td>
+                </tr>
+            {{/each}}
+        </tbody> --}}
+        </div>
+    </div>
+</body>
+</html>

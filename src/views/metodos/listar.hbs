@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/metodos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
+    <title>Bienvenido</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h1>Bienvenido</h1>
+        <ul>
+            <li>
+                <button id="dashboard-button">
+                    <a href="/dashboard">
+                        <img src="/img/iconocasa.png" alt="restaurante">Dashboard
+                    </a>
+                </button>
+                <button id="menu-button">
+                    <a href="/crearMenu">
+                        <img src="/img/menuicono.png" alt="creacion">Creacion de menus
+                    </a>
+                </button>
+                <button id="carrito-button">
+                    <a href="/carrito">
+                        <img src="/img/carritoicono.png" alt="carrito">Carrito de compras
+                    </a>
+                </button>
+                <button id="metodos-button">
+                    <a href="/metodos">
+                        <img src="/img/tarjetaicono.png" alt="metodos">Metodos de pagos
+                    </a>
+                </button>
+                <button id="visualizar-button">
+                    <a href="/visualizar">
+                        <img src="/img/visulaizarmenuicono.png" alt="visualizar">Visualizar menu
+                    </a>
+                </button>
+            </li>
+        </ul>
+        <img src="/img/logo1.jpg" id="logoizquierdo">
+    </div>
+
+    <div id="main-content">
+
+        <h1>Metodos de pago</h1>
+        
+        <div id="user-info">
+            <img src="/img/usuarioicono.png">
+            <h2>Samuel Robertson</h2>
+            <p>Restaurante Administrador</p>
+        </div>
+
+    </div>
+
+    <div id="card-general">
+        <div id="publicidad">
+            <h1>LO LOGRAMOS!</h1>
+            <h3>Este año conseguimos<br>la michelin...</h3>
+            <div>
+                <img src="/img/michelinstar.png">
+            </div>
+        </div>
+
+        
+<form action="metodos/listar/" method="get"></form>
+        <div id="tablas">
+            <h1>Metodos de pago activos</h1>
+            <button><a href="/metodos/agregar">Agregar</a></button>
+            <h3>Todos los pagos</h3>
+            <hr>
+            <table>
+    <thead>
+        <tr>
+            <th>M. DE PAGO</th>
+            <th>ESTADO</th>
+            <th>EDITAR</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each lista}}
+        <tr>
+            <td><center>{{metodoPago}}</center></td>
+            <td><center>{{estado}}</center></td>
+            <td>
+                <a style="color: red;" href="/metodos/editar/{{idMetodo}}"><center>Editar</center></a>
+            </td>
+        </tr>
+    {{/each}}
+        {{!-- <tr>
+            <td>{{metodoPago}}</td>
+            <td>{{estado}}</td>
+            <td>
+                <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>{{metodoPago}}</td>
+            <td>{{estado}}</td>
+            <td>
+                <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
+            </td>
+        </tr> --}}
+    </tbody> 
+</table>
+
+        
+        </div>
+
+    </div>
+
+</body>
+</html>
