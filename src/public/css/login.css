@@ -83,7 +83,7 @@ label {
 input[type="email"],
 input[type="password"] {
     font-family: 'Montserrat', sans-serif;
-    width: 400px; /* Ocupa el 100% del ancho disponible */
+    width: 450px; /* Ocupa el 100% del ancho disponible */
     padding: 13px; /* Ajusta el relleno según tus necesidades */
     font-size: 18px; /* Ajusta el tamaño de la fuente según tus necesidades */
     margin-bottom: 20px;
@@ -106,7 +106,7 @@ input[type="password"] {
     padding: 15px 60px; /* Ajusta el relleno del botón según tus necesidades */
     cursor: pointer;
     border-radius: 10px;
-    margin-left: -150px;
+    margin-left: -130px;
     margin-top: 50px;
 }
 #seccion-derecha button a{

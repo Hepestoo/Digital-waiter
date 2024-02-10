@@ -46,50 +46,37 @@ passport.use(
 	)
 );
 
-
 //! Registro
 passport.use(
-	"local.signup",
-	new LocalStrategy(
-		{
-			usernameField: "email",
-			passwordField: "password",
-			passReqToCallback: true,
-		},
-		async (req, email, password, done) => {
-			const usuarios = await orm.dueño.findOne({ where: { email: email }});
-			if (usuarios === null) {
-				const { fullname, username, email, password} = req.body;
-				let nuevoGerente = {
-					fullname: cifrarDatos(fullname),
-					username: cifrarDatos(username),
-					email,
-					password,
-				};
-				nuevoGerente.password = await helpers.hashPassword(password);
-				const resultado = await orm.dueño.create(nuevoGerente);
-				nuevoGerente.id = resultado.insertId;
-				return done(null, nuevoGerente)
-				
-			} else {
-				if (usuarios) {
-					const usuario = usuarios;
-					if (username == usuario.username) {
-						done(null, false, req.flash("message", "El nombre de usuario ya existe."));
-					} else {
-						let nuevoGerente = {
-							email,
-							password
-						};
-						nuevoGerente.password = await helpers.encryptPassword(password);
-						const resultado = await orm.dueño.create(nuevoGerente);
-						nuevoGerente.id = resultado.insertId;
-						return done(null, nuevoGerente);
-					}
-				}
-			}
-		}
-	)
+    "local.signup",
+    new LocalStrategy(
+        {
+            usernameField: "email",
+            passwordField: "password",
+            passReqToCallback: true,
+        },
+        async (req, email, password, done) => {
+            try {
+                const usuarioExistente = await orm.dueño.findOne({ where: { email: email } });
+                if (usuarioExistente) {
+                    return done(null, false, req.flash("success", "El correo electrónico ya está en uso."));
+                }
+                const { fullname, username } = req.body;
+                let nuevoGerente = {
+                    fullname: cifrarDatos(fullname),
+                    username: cifrarDatos(username),
+                    email,
+                    password,
+                };
+                nuevoGerente.password = await helpers.hashPassword(password);
+                const resultado = await orm.dueño.create(nuevoGerente);
+                nuevoGerente.id = resultado.insertId;
+                return done(null, nuevoGerente);
+            } catch (error) {
+                return done(error);
+            }
+        }
+    )
 );
 
 passport.serializeUser((user, done) => {

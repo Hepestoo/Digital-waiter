@@ -65,10 +65,11 @@ body::after {
     font-size: 30px;
     margin-top: -30px; /* Ajusta el margen superior según tus necesidades */
     text-align: center;
-    margin-left: -350px;
+    margin-left: -400px;
 }
 form {
     margin-top: 100px; /* Ajusta el margen superior del formulario según tus necesidades */
+    margin-left: -30px;
 }
 
 label {
@@ -107,7 +108,7 @@ input[type="password"] {
     cursor: pointer;
     border-radius: 10px;
     margin-left: -150px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 #seccion-derecha button a{
     font-family: 'Montserrat', sans-serif;
