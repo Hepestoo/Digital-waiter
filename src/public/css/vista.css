@@ -96,6 +96,12 @@ body::after {
     margin-left: 850px;
     font-family: 'Montserrat', sans-serif;
 }
+#user-info a img{
+    margin-left: 740px;
+    margin-top:-85px;
+    height: 23px;
+    width: 23px;
+}
 #user-info img {
     position: absolute;
     width: 50px;

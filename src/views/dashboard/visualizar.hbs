@@ -56,37 +56,41 @@
     </div>
 
     <div id="container">
-      <h1>Previa del menú</h1>
+      <h1>Menu</h1>
       <form action="/dashboard/visualizar" method="get">
+
+      <div id="entradas">
         <h2>Entradas</h2>
         {{#each lista1}}
           <p>{{nombre}}</p>
-          <p>{{descripcion}}</p>
           <p>{{precio}}</p>
         {{/each}}
+      </div>
 
+      <div id="bebidas">
         <h2>Bebidas</h2>
         {{#each lista2}}
           <p>{{nombre}}</p>
-          <p>{{descripcion}}</p>
           <p>{{precio}}</p>
         {{/each}}
+      </div>
 
+      <div id="postres">
         <h2>Postres</h2>
         {{#each lista3}}
           <p>{{nombre}}</p>
-          <p>{{descripcion}}</p>
           <p>{{precio}}</p>
         {{/each}}
+      </div>
 
+      <div id="sopas">
         <h2>Sopas</h2>
         {{#each lista4}}
           <p>{{nombre}}</p>
-          <p>{{descripcion}}</p>
           <p>{{precio}}</p>
         {{/each}}
+      </div>
 
-      </form>
     </div>
 
 </body>

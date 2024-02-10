@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -147,7 +149,137 @@ body::after {
 /*tablas grandes*/
 #container{
     width: 1050px;
-    height: 660px;
+    height: 700px;
     margin: auto; /* Esto centra horizontalmente */
     margin-left: 350px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
 }
+#container h1{
+    font-weight: bold;
+    color: #FFFBF0;
+    font-family: 'Carter One', 'Montserrat', sans-serif;
+    font-size: 120px;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    -webkit-text-stroke: 1px #000000;
+}
+#entradas {
+    width: 500px;
+    height: 645px;
+    float: left;
+    border-right: 2px solid #FFFBF0;
+    margin-top: 40px
+
+}
+#entradas h2{
+    background-color: red;
+    height: 20px;
+    width: 200px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Permanent Marker', sans-serif;
+}
+#entradas p{
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+}
+#entradas p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+#bebidas {
+    width: 530px;
+    height: 200px;
+    float: right;
+    border-bottom: 2px solid #FFFFFF;
+    margin-right: 20px;
+    margin-top: 40px
+
+}
+#bebidas h2{
+    background-color: red;
+    height: 20px;
+    width: 200px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-family: 'Permanent Marker', sans-serif;
+}
+#bebidas p{
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+}
+#bebidas p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+#postres {
+    width: 530px;
+    height: 200px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid #FFFFFF;
+}
+#postres h2{
+    background-color: red;
+    height: 20px;
+    width: 200px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-family: 'Permanent Marker', sans-serif;
+}
+#postres p{
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+}
+#postres p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+#sopas {
+    width: 530px;
+    height: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+#sopas h2{
+    background-color: red;
+    height: 20px;
+    width: 200px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    font-family: 'Permanent Marker', sans-serif;
+}
+#sopas p{
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+}
+#sopas p:last-child {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}   

@@ -338,6 +338,7 @@ body::after {
 }
 #secciones {
     padding-left: 20px;
+    margin-top: 20px;
     display: flex; /* Añade esta línea */
     justify-content: space-between; /* Añade esta línea */
 }
@@ -347,8 +348,18 @@ body::after {
     flex-direction: column;
     align-items: flex-start;
 }
+#izquierda button{
+    margin-top: -5px;
+}
 #derecha{
     margin-right: 20px;
+    margin-top: 40px;
+}
+#derecha button{
+    background-color: #eb9090;
+    width: 150px;
+    height: 30px;
+    border: none;
 }
 #secciones h2{
     font-size: 25px;
@@ -366,36 +377,14 @@ body::after {
     border-radius: 5px;
     border: none;
 }
+
 #editar a{
     color: #000000;
 }
 
-#boton-activo {
-    background-color: #B7E8D4; /* Azul */
-    color: #000000; /* Texto blanco */
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 5px;
-    margin-top: 60px;
-}
-#boton-activo a{
-    color: #000000;
-}
-#boton-inactivo {
-    background-color: #F6A5A5; /* Rojo */
-    color: #000000; /* Texto blanco */
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-}
-#boton-inactivo a{
-    color: #000000;
-}
 hr{
     background-color: #000000;
     width: 80%;
     margin-left: 35px;
+    margin-top: 10px;
 }
