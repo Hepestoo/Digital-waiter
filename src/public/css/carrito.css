@@ -388,3 +388,251 @@ hr{
     margin-left: 35px;
     margin-top: 10px;
 }
+
+@media (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body::after {
+        content: "";
+        background: url(../img/fondo.png);
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #sidebar {
+        position: fixed;
+        width: 100px;
+        height: 100%;
+        background: #F3DBC3;
+        box-sizing: border-box;
+        overflow: auto;
+        box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+    }
+    #sidebar h1{
+        display: none;
+    }
+    #sidebar h2{
+        display: none;
+    }
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar ul li:last-child {
+        border-bottom: none;
+        margin-left: -10px;
+    }
+    #carrito-button{
+        background-color: #FFFBF0;
+        cursor: pointer;
+        float: left;
+        height: 70px;
+        width: 65px;
+        border-radius: 0 10px 10px 0;
+        border: 3px solid #333333;
+    }
+    #dashboard-text,
+    #menu-text,
+    #carrito-text,
+    #metodos-text,
+    #visualizar-text {
+        display: none;
+    }
+    #dashboard-button img,
+    #menu-button img,
+    #carrito-button img,
+    #metodos-button img,
+    #visualizar-button img {
+        width: 40px;
+        height: 40px;
+    }
+    #logoizquierdo{
+        display: none;
+    }
+    #user-info {
+        align-items: right;
+        text-align: left;
+    }
+    #user-info h2 {
+        display: none;
+    }
+    #user-info p {
+        display: none;
+    }
+    #user-info a img{
+        margin-left: 400px;
+        margin-top:-40px;
+        height: 23px;
+        width: 23px;
+    }
+    #user-info img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+        margin-top: -50px;
+    }
+    #main-content {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #main-content h1 {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-weight: bold;
+        border-bottom: none;
+        font-family: 'Montserrat', sans-serif;  
+        font-size: 25px;
+    }
+    #container{
+        width: 580px;
+        height: 1200px;
+        margin: auto; /* Esto centra horizontalmente */
+        margin-left: 120px;
+    }
+    #actividad{
+        margin-top: 10px;
+        margin-left: 30px;
+        height: 560px;
+        width: 500px;
+    }
+    #actividad h1{
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-weight: 200px;
+        font-size: 30px;
+    }
+    #actividad h3{
+        display: none;
+    }
+    #actividad-tarjeta{
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/confirmarpedido.jpeg);
+        border-radius: 20px;
+        margin-top: -10px;
+        height: 520px;
+        width: 500px;
+    }
+    #actividad-tarjeta h1{
+        color: #FC6060 ;
+        text-align: left;
+        font-size: 33px;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+    #platos{
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        padding-left: 30px;
+        padding-top: 15px;
+    
+    }
+    #platos h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #total h3{
+        font-family: 'Montserrat', sans-serif;
+        color: #D6C0C0;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 30px;
+    }
+    #comprobante{
+        background-color: #FFFFFF;
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 460px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    #comprobante h1{
+        font-family: 'Montserrat', sans-serif;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    #comprobante-foto{
+        background-color: #CCC5C5;
+        border-radius: 10px;
+        margin-left: 20px;
+        width: 420px;
+        height: 100px;
+    }
+    #comprobante-foto h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #2AB548;
+        font-weight: bold;
+        margin-bottom: -15px;
+        padding-left: 10px;
+    }
+    #comprobante-foto hr{
+        font-family: 'Montserrat', sans-serif;
+        background-color: #000000;
+    }
+    #comprobante-foto h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        margin-top: -10px;
+        padding-left: 10px;
+    }
+    #comprobante-foto h1{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: -7px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    #conf-btn{
+        background-color: #0085FF;
+        border: none;
+        display: block;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        font-weight: 500;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    #close-btn{
+        background-color: #CCC5C5;
+        border: none;
+        display: block;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    #limitantes{
+        height: 500px;
+        width: 450px;
+        display: inline-block;
+        margin-top: -5px;
+        margin-left: 70px;
+    }
+}

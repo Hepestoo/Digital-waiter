@@ -88,85 +88,75 @@ button {
     cursor: pointer;
 }
 
-button a {
+
+button a:link,
+button a:visited,
+button a:hover,
+button a:active {
+    font-size: 30px;
     color: #F5F5DC;
     font-weight: bold;
+    text-decoration: none;
 }
 
 button:hover {
     background-color: #3b3b3b;
 }
 
-@media (max-width: 940px) {
-    body img{
-        width: 400px;
+
+
+
+
+@media (max-width: 720px) {
+    #digital-waiter,
+    nav {
+        display: none;
     }
 
-    nav #menu-btn i {
-        display: block;
-    }
-
-    #click:checked ~ #menu-btn i:before {
-        content: "\f00d";
-    }
-
-    nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #2a3e66;
-        height: 100vh;
+    body {
+        position: absolute;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: 20px;
-        transition: all 0.3s ease;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-        padding-right: 0;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-        display: block;
-        padding: 10px 0;
-        color: #F5F5DC;
-        transition: all 0.3s ease;
-    }
-
-    nav ul li a:hover,
-    nav ul li a:active {
-        color: #facea3;
-        text-decoration: none;
-    }
-
-    #click:checked ~ ul {
-        left: 0%;
+        height: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/indexmovil.PNG');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        margin: 0;
     }
 
     h1 {
-        font-size: 60px;
-        padding: 80px 20px 40px;
-    }
-
-    #digital-waiter img {
-        height: 70px;
-        margin-bottom: 20px;
+        font-size: 90px;
+        font-weight: bold;
+        margin-left: 40px;
+        margin-top: 150px;
     }
 
     button {
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 300px;
+        margin-left: 40px;
         font-size: 24px;
         padding: 15px 30px;
-        width: auto;
+        width: 400px;
         border: 3px solid #F5F5DC;
         background-color: transparent;
         border-width: 7px;
         cursor: pointer;
     }
-}   
-
+    
+    button a,
+    button a:link,
+    button a:visited,
+    button a:hover,
+    button a:active {
+        font-size: 30px;
+        color: #F5F5DC;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    button:hover {
+        background-color: #3b3b3b;
+    }
+}

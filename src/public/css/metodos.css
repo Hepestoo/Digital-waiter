@@ -259,3 +259,220 @@ td a img{
 th {
     background-color: #ADD8E6;
 }
+@media (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body::after {
+        content: "";
+        background: url(../img/fondo.png);
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #sidebar {
+        position: fixed;
+        width: 100px;
+        height: 100%;
+        background: #F3DBC3;
+        box-sizing: border-box;
+        overflow: auto;
+        box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+    }
+    #sidebar h1{
+        display: none;
+    }
+    #sidebar h2{
+        display: none;
+    }
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar ul li:last-child {
+        border-bottom: none;
+        margin-left: -10px;
+    }
+    #metodos-button{
+        background-color: #FFFBF0;
+        cursor: pointer;
+        float: left;
+        height: 70px;
+        width: 65px;
+        border-radius: 0 10px 10px 0;
+        border: 3px solid #333333;
+    }
+    #dashboard-text,
+    #menu-text,
+    #carrito-text,
+    #metodos-text,
+    #visualizar-text {
+        display: none;
+    }
+    #dashboard-button img,
+    #menu-button img,
+    #carrito-button img,
+    #metodos-button img,
+    #visualizar-button img {
+        width: 40px;
+        height: 40px;
+    }
+    #logoizquierdo{
+        display: none;
+    }
+    #user-info {
+        align-items: right;
+        text-align: left;
+    }
+    #user-info h2 {
+        display: none;
+    }
+    #user-info p {
+        display: none;
+    }
+    #user-info a img{
+        margin-left: 400px;
+        margin-top:-40px;
+        height: 23px;
+        width: 23px;
+    }
+    #user-info img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+        margin-top: -50px;
+    }
+    #main-content {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #main-content h1 {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;  
+        font-size: 25px;
+    }
+    #card-general{
+        background-color: rgba(255, 204, 153, 0.3);
+        width: 560px;
+        height: 1100px;
+        margin-top: 40px;
+        margin-left: 130px;
+        border-radius: 20px;
+    }
+    #publicidad{
+        width: 530px;
+        height: 250px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/publimetodos.PNG);
+        border-radius: 20px;
+        background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+        background-position: center; /* Centra la imagen de fondo */
+        background-repeat: no-repeat;
+        margin-left: 15px;
+        position: relative;
+        top: 20px;
+    }
+    #publicidad h1{
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        font-weight: bold;
+        padding-top: 40px;
+        padding-left: 20px;
+        font-size: 35px;
+    }
+    #publicidad h3{
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        padding-top: 30px;
+        padding-left: 50px;
+        font-size: 23px;
+    }
+    #publicidad img{
+        width: 350px;
+        height: 250px;
+        float: right; 
+        margin-top: -180px;
+        margin-right: -60px;
+    }
+    #tablas{
+        margin-top: 60px;
+    }
+    #tablas h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 20px;
+        padding-bottom: 15px;
+    }
+    #tablas button{
+        width: 150px;
+        border-radius: 10px;
+        border: none;
+        background-color: #cbcbcb;
+        float: right;
+        margin-right: 30px; /* Ajusta este valor para mover el botón hacia la izquierda */
+        margin-top: -30px; /* Ajusta este valor para mover el botón hacia arriba */
+    }
+    #tablas button a{
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+    #tablas h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        margin-left: 40px;
+        border-bottom: 4px solid #000000;
+        width: 110px;
+        padding-bottom: 10px;
+    }
+    #tablas hr{
+        border: 0;
+        height: 1px;
+        background: #333;
+        margin-top: -10px;
+        margin-left: 40px;
+        width: 500px;
+    }
+    table {
+        width: 500px;
+        border-collapse: collapse;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    
+    th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+    td{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: left;
+        background-color: #FFFFFF;
+    }
+    td a img{
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
+    th {
+        background-color: #ADD8E6;
+    }
+}
