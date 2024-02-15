@@ -364,7 +364,7 @@ body::after {
     }
     #user-info a img{
         margin-left: 400px;
-        margin-top:-40px;
+        margin-top: 20px;
         height: 23px;
         width: 23px;
     }
@@ -373,7 +373,7 @@ body::after {
         width: 50px;
         height: 50px;
         margin-left: 450px;
-        margin-top: -50px;
+        margin-top: 10px;
     }
     #main-content {
         margin-left: 100px;
@@ -381,12 +381,141 @@ body::after {
         flex-direction: column;
         align-items: flex-start;
     }
-    #main-content h1 {
-        text-align: left;
-        margin-top: 20px;
-        margin-left: 50px;
+    /*tablas grandes*/
+    #container{
+        width: 580px;
+        height: 1100px;
+        margin: auto; /* Esto centra horizontalmente */
+        margin-left: 120px;
+        margin-top: 100px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    #container h1{
         font-weight: bold;
-        font-family: 'Montserrat', sans-serif;  
+        color: #FFFBF0;
+        font-family: 'Carter One', 'Montserrat', sans-serif;
+        font-size: 120px;
+        position: absolute;
+        top: 10px;
+        left: 150px;
+        -webkit-text-stroke: 1px #000000;
+    }
+    #entradas {
+        width: 530px;
+        height: 230px;
+        float: left;
+        border-right: none;
+        margin-left: 30px;
+        margin-top: 60px;
+
+    }
+    #entradas h2{
+        background-color: red;
+        height: 20px;
+        width: 230px;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-family: 'Permanent Marker', sans-serif;
+    }
+    #entradas p{
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+        display: inline-block;
+        font-family: 'Caveat', cursive;
+    }
+    #entradas p:last-child {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
         font-size: 25px;
     }
+    #bebidas {
+        width: 530px;
+        height: 230px;
+        float: right;
+        margin-right: 20px;
+        border-bottom: none;
+
+    }
+    #bebidas h2{
+        background-color: red;
+        height: 20px;
+        width: 200px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        font-family: 'Permanent Marker', sans-serif;
+    }
+    #bebidas p{
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+        display: inline-block;
+        font-family: 'Caveat', cursive;
+    }
+    #bebidas p:last-child {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #postres {
+        width: 530px;
+        height: 230px;
+        float: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        border-bottom: none;
+    }
+    #postres h2{
+        background-color: red;
+        height: 20px;
+        width: 200px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        font-family: 'Permanent Marker', sans-serif;
+    }
+    #postres p{
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+        display: inline-block;
+        font-family: 'Caveat', cursive;
+    }
+    #postres p:last-child {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #sopas {
+        width: 530px;
+        height: 230px;
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    #sopas h2{
+        background-color: red;
+        height: 20px;
+        width: 200px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        font-family: 'Permanent Marker', sans-serif;
+    }
+    #sopas p{
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 40px;
+        display: inline-block;
+        font-family: 'Caveat', cursive;
+    }
+    #sopas p:last-child {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+    } 
 }

@@ -347,4 +347,72 @@ body::after {
         font-family: 'Montserrat', sans-serif;  
         font-size: 25px;
     }
+    #card-general {
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/fondoformulario.png);
+        background-blend-mode: lighten;
+        background-size: cover; /* Para que la imagen cubra todo el div */
+        background-position: center; /* Para centrar la imagen */
+        background-repeat: no-repeat; 
+        width: 560px;
+        height: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 130px;
+        margin-top: 60px;
+        border-radius: 20px;
+    }
+    #card-general  a{
+        text-decoration: none;
+    }
+    #card-general img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-top: 1000px;
+        margin-left: -10px;
+    }
+    #card-general form {
+        margin-top: -900px; /* Ajusta el margen superior del formulario según tus necesidades */
+        height: 300px;
+        margin-left: 20px;
+    }
+    
+    #card-general label {
+        display: block;
+        font-size: 30px; /* Ajusta el tamaño de la fuente de las etiquetas según tus necesidades */
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #F5F5DC;
+        margin-top: 10px;
+    }
+    #card-general input {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #E3E2E2;
+        width: 510px;
+        height: 50px;
+        font-size: 20px;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Añade espacio entre los inputs */
+        border-radius: 10px;
+        padding-left: 20px;
+        border: none;
+    }
+    #estado h1{
+        color: #F5F5DC;
+        font-size: 30px;
+    }
+    #listo-btn{
+        font-family: 'Montserrat', sans-serif;
+        width: 250px;
+        height: 50px;
+        display: block;
+        margin-left: 150px;
+        margin-top: 100px;
+        border-radius: 20px;
+        border: none;
+        background-color: #0085FF;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
 }
