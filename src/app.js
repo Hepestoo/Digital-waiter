@@ -33,7 +33,7 @@ app.use(myconnection(mysql, {
     user: 'root',
     password: '',
     port: 3306,
-    database: 'digital'
+    database: 'digital1'
 }))
 
 const sessionStore = new MySQLStore(options);
