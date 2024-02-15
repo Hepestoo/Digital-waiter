@@ -102,7 +102,7 @@ body::after {
     width: 50px;
     height: 50px;
     float: left;
-    margin-top: 630px;
+    margin-top: 30px;
     margin-left: -20px;
 }
 #card1 {
@@ -314,8 +314,8 @@ body::after {
         width: 50px;
         height: 50px;
         float: left;
-        margin-top: 1000px;
-        margin-left: -50px;
+        margin-top: 30px;
+        margin-left: -20px;
     }
     #card1 {
         background-image: url(../img/fondoformulario.png), linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));
@@ -323,8 +323,8 @@ body::after {
         background-size: cover; /* Para que la imagen cubra todo el div */
         background-position: center; /* Para centrar la imagen */
         background-repeat: no-repeat; 
-        margin-top: 20px;
-        margin-left: -10px;
+        margin-top: 100px;
+        margin-left: -50px;
         width: 500px;
         height: 900px;
         box-sizing: border-box;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/metodosAgregar.css">
+    <link rel="stylesheet" href="/css/metodosEditar.css">
     <link rel="shortcut icon" type="image/x-icon" href="/img/logo1.jpg">
     <title>Bienvenido</title>
 </head>
@@ -58,6 +58,7 @@
     <div id="lineahorizontal"></div>
 
     <div id="card-general">
+        <a href="../listar"><img src="/img/atras.png"></a>
         {{#each lista}}
         <form action="/metodos/editar/{{idMetodo}}" method="post">
 
