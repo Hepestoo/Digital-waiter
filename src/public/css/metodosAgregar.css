@@ -241,3 +241,110 @@ body::after {
     font-size: 30px;
     color: #FFFFFF;
 }
+@media (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body::after {
+        content: "";
+        background: url(../img/fondo.png);
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #sidebar {
+        position: fixed;
+        width: 100px;
+        height: 100%;
+        background: #F3DBC3;
+        box-sizing: border-box;
+        overflow: auto;
+        box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+    }
+    #sidebar h1{
+        display: none;
+    }
+    #sidebar h2{
+        display: none;
+    }
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar ul li:last-child {
+        border-bottom: none;
+        margin-left: -10px;
+    }
+    #metodos-button{
+        background-color: #FFFBF0;
+        cursor: pointer;
+        float: left;
+        height: 70px;
+        width: 65px;
+        border-radius: 0 10px 10px 0;
+        border: 3px solid #333333;
+    }
+    #dashboard-text,
+    #menu-text,
+    #carrito-text,
+    #metodos-text,
+    #visualizar-text {
+        display: none;
+    }
+    #dashboard-button img,
+    #menu-button img,
+    #carrito-button img,
+    #metodos-button img,
+    #visualizar-button img {
+        width: 40px;
+        height: 40px;
+    }
+    #logoizquierdo{
+        display: none;
+    }
+    #user-info {
+        align-items: right;
+        text-align: left;
+    }
+    #user-info h2 {
+        display: none;
+    }
+    #user-info p {
+        display: none;
+    }
+    #user-info a img{
+        margin-left: 400px;
+        margin-top:-40px;
+        height: 23px;
+        width: 23px;
+    }
+    #user-info img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+        margin-top: -50px;
+    }
+    #main-content {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #main-content h1 {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;  
+        font-size: 25px;
+    }
+}

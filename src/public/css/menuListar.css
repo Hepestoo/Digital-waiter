@@ -325,6 +325,13 @@ body::after {
     #logoizquierdo{
         display: none;
     }
+    #lineahorizontal{
+        background-color: #000000;
+        border-top: 2px solid black;
+        margin: 10px 0 0 -20px;
+        width: 100%;
+        float: center;
+    }
     #user-info {
         align-items: right;
         text-align: left;

@@ -48,22 +48,6 @@ body::after {
 #sidebar ul li:last-child {
     border-bottom: none;
 }
-#sidebar-button {
-    background-color: #FFFBF0;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    float: left;
-    padding: 15px 50px;
-    border-radius: 0 10px 10px 0;
-    color: #333333;
-}
-#sidebar-button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    margin-left: -20px;
-}
 #main-content {
     margin-left: 320px;
     display: flex;
@@ -223,4 +207,179 @@ body::after {
 }
 #tarjeta b{
     margin-left: 10px;
+}
+@media (max-width: 720px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body::after {
+        content: "";
+        background: url(../img/fondo.png);
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #sidebar {
+        position: fixed;
+        width: 100px;
+        height: 100%;
+        background: #F3DBC3;
+        box-sizing: border-box;
+        overflow: auto;
+        box-shadow: 10px 0px 15px -1px rgba(0, 0, 0, 0.6);
+    }
+    #sidebar h1{
+        display: none;
+    }
+    #sidebar h2{
+        display: none;
+    }
+    #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #sidebar ul li:last-child {
+        border-bottom: none;
+        margin-left: -10px;
+    }
+    #menu-button{
+        background-color: #FFFBF0;
+        cursor: pointer;
+        float: left;
+        height: 70px;
+        width: 65px;
+        border-radius: 0 10px 10px 0;
+        border: 3px solid #333333;
+    }
+    #dashboard-text,
+    #menu-text,
+    #carrito-text,
+    #metodos-text,
+    #visualizar-text {
+        display: none;
+    }
+    #dashboard-button img,
+    #menu-button img,
+    #carrito-button img,
+    #metodos-button img,
+    #visualizar-button img {
+        width: 40px;
+        height: 40px;
+    }
+    #logoizquierdo{
+        display: none;
+    }
+    #lineahorizontal{
+        background-color: #000000;
+        border-top: 2px solid black;
+        margin: 10px 0 0 -20px;
+        width: 100%;
+        float: center;
+    }
+    #user-info {
+        align-items: right;
+        text-align: left;
+    }
+    #user-info h2 {
+        display: none;
+    }
+    #user-info p {
+        display: none;
+    }
+    #user-info a img{
+        margin-left: 400px;
+        margin-top:-40px;
+        height: 23px;
+        width: 23px;
+    }
+    #user-info img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        margin-left: 450px;
+        margin-top: -50px;
+    }
+    #main-content {
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #main-content h1 {
+        text-align: left;
+        margin-top: 20px;
+        margin-left: 50px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;  
+        font-size: 25px;
+    }
+    #plato-tarjeta{
+        margin-top: 30px;
+        margin-left: 60px;
+        height: 1050px;
+        width: 540px;
+    }
+    
+    #plato-tarjeta h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    #plato-tarjeta  a{
+        text-decoration: none;
+    }
+    #plato-tarjeta img{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-top: 1000px;
+        margin-left: -40px;
+    }
+    #tarjetas-contenedor { /* Nuevo estilo para el contenedor de las tarjetas */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 1000px;
+    }
+    
+    #tarjeta{
+        background-color: #EBBADD;
+        margin-top: 10px;
+        height: 260px;
+        width: 180px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    #tarjeta button{
+        background-color: #0085FF;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        display: block; /* Añade esta línea */
+        margin: auto;
+        cursor: pointer;
+    }
+    #tarjeta p{
+        text-align: center;
+        margin-top: -5px;
+        display: inline-block;
+    }
+    #tarjeta a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    #tarjeta b{
+        margin-left: 10px;
+    }
 }
