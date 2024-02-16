@@ -243,12 +243,12 @@ body::after {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 50px;
-        margin-left: 40px;
+        margin-left: 20px;
     }
     #card1 {
         background-color: #FFFFFF;
         padding: 60px 0;
-        margin: 0 22px;
+        margin-left: 5px;
         width: 300px;
         height: 300px;
         box-sizing: border-box;
