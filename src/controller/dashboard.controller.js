@@ -3,8 +3,11 @@ const dashboard = {}
 const sql = require('../Database/dataBase.sql')
 const orm = require('../Database/dataBase.orm')
 
-dashboard.showDashboard = (req, res) => {
-    res.render('dashboard/dashboard')
+dashboard.showDashboard = async (req, res) => {
+    const ids = req.params.id;
+    // const menus = await sql.query('select * from menus')
+    const lista = await sql.query('select * from restaurantes where idRestaurante = ?', [ids])
+    res.render('dashboard/dashboard', {lista})
 }
 
 dashboard.showForm = (req, res) => {

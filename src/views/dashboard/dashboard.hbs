@@ -8,6 +8,10 @@
     <title>Bienvenido</title>
 </head>
 <body>
+    
+    {{#each lista}}
+
+    <form action="/dashboard/{{idRestaurante}}" method="get"></form>
 
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
@@ -127,6 +131,8 @@
             <button><a href="/bebidas/listar">Ver</a></button>
         </div>
     </div>
+
+    {{/each}}
 
 </body>
 </html>
