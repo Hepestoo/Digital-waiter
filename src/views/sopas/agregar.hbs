@@ -11,6 +11,11 @@
 
 
 <body>
+
+    {{#each lista}}
+
+    <form action="/sopas/agregar/{{idRestaurante}}" method="get"></form>
+
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <ul>
@@ -78,6 +83,7 @@
             </div>
         </div>
     </div>
+    {{/each}}
     
 </body>
 

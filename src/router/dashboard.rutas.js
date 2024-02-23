@@ -9,6 +9,6 @@ rutas.get('/crearMenu', showForm);
 rutas.get('/metodos/listar/:id', showMetodos);
 rutas.get('/visualizar', (req, res) => res.redirect('/visualizar/activos')); // Redireccionamiento a visualizar/activos
 rutas.get('/visualizar/:id', listar);
-rutas.get('/carrito', showCarrito);
+rutas.get('/carrito/:id', showCarrito);
 
 module.exports = rutas
