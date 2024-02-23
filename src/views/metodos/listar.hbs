@@ -65,47 +65,47 @@
             </div>
         </div>
 
-        
-<form action="metodos/listar/" method="get"></form>
+        {{#each listaRestaurante}}
+<form action="metodos/listar/{{idRestaurante}}" method="get"></form>{{/each}}
         <div id="tablas">
             <h1>Metodos de pago activos</h1>
             <button><a href="/metodos/agregar">Agregar</a></button>
             <h3>Todos los pagos</h3>
             <hr>
             <table>
-    <thead>
-        <tr>
-            <th>M. DE PAGO</th>
-            <th>ESTADO</th>
-            <th>EDITAR</th>
-        </tr>
-    </thead>
-    <tbody>
-    {{#each lista}}
-        <tr>
-            <td><center>{{metodoPago}}</center></td>
-            <td><center>{{estado}}</center></td>
-            <td>
-                <a href="/metodos/editar/{{idMetodo}}"><center><img src="../img/editar.png"></center></a>
-            </td>
-        </tr>
-    {{/each}}
-        {{!-- <tr>
-            <td>{{metodoPago}}</td>
-            <td>{{estado}}</td>
-            <td>
-                <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>{{metodoPago}}</td>
-            <td>{{estado}}</td>
-            <td>
-                <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
-            </td>
-        </tr> --}}
-    </tbody> 
-</table>
+                <thead>
+                    <tr>
+                        <th>M. DE PAGO</th>
+                        <th>ESTADO</th>
+                        <th>EDITAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {{#each lista}}
+                    <tr>
+                        <td><center>{{metodoPago}}</center></td>
+                        <td><center>{{estado}}</center></td>
+                        <td>
+                            <a href="/metodos/editar/{{idMetodo}}"><center><img src="../img/editar.png"></center></a>
+                        </td>
+                    </tr>
+                {{/each}}
+                {{!-- <tr>
+                    <td>{{metodoPago}}</td>
+                    <td>{{estado}}</td>
+                    <td>
+                        <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{metodoPago}}</td>
+                    <td>{{estado}}</td>
+                    <td>
+                        <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
+                    </td>
+                </tr> --}}
+                </tbody> 
+            </table>
 
         
         </div>

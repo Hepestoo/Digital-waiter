@@ -9,10 +9,10 @@
 </head>
 <body>
 
-    {{#each  lista}}
+    {{#each lista}}
 
     <form  action = "/metodos/{{idRestaurante}} "  method = " get " ></form >
-    {{/each}}
+    
 
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
@@ -79,44 +79,46 @@
             <h3>Todos los pagos</h3>
             <hr>
             <table>
-    <thead>
-        <tr>
-            <th>M. DE PAGO</th>
-            <th>ESTADO</th>
-            <th>EDITAR</th>
-        </tr>
-    </thead>
-        <tbody>
-    {{#each lista}}
-        <tr>
-            <td>{{metodoPago}}</td>
-            <td>{{estado}}</td>
-            <td>
-                <a href="/metodos/editar/{{idMetodo}}"><center>Editar</center></a>
-            </td>
-        </tr>
-        {{/each}}
-        {{!-- <tr>
-            <td>{{metodoPago}}</td>
-            <td>{{estado}}</td>
-            <td>
-                <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>{{metodoPago}}</td>
-            <td>{{estado}}</td>
-            <td>
-                <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
-            </td>
-        </tr> --}}
-    </tbody> 
-</table>
+                <thead>
+            <tr>
+                <th>M. DE PAGO</th>
+                <th>ESTADO</th>
+                <th>EDITAR</th>
+            </tr>
+                </thead>
+                <tbody>
+                {{#each lista}}
+                    <tr>
+                        <td>{{metodoPago}}</td>
+                        <td>{{estado}}</td>
+                        <td>
+                            <a href="/metodos/editar/{{idMetodo}}"><center>Editar</center></a>
+                        </td>
+                    </tr>
+                {{/each}}
+                {{!-- <tr>
+                    <td>{{metodoPago}}</td>
+                    <td>{{estado}}</td>
+                    <td>
+                        <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{metodoPago}}</td>
+                    <td>{{estado}}</td>
+                    <td>
+                        <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
+                    </td>
+                </tr> --}}
+                </tbody> 
+            </table>
 
         
         </div>
 
     </div>
+
+    {{/each}}
 
 </body>
 </html>
