@@ -108,4 +108,5 @@ app.use('/carrito',require('./router/carrito.rutas'))
 //!Registro del restaurante
 app.use('/tienda', require('./router/tienda.router'))
 
+
 module.exports = app;

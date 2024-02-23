@@ -10,7 +10,7 @@
 <body>
     
     {{#each lista}}
-
+    
     <form action="/dashboard/{{idRestaurante}}" method="get"></form>
 
     <div id="sidebar">
@@ -18,17 +18,17 @@
         <ul>
             <li>
                 <button id="dashboard-button">
-                <a href="/dashboard">
+                <a href="/dashboard/{{idRestaurante}}">
                     <img src="/img/iconocasa.png" alt="restaurante"><span id="dashboard-text">Dashboard</span>
                 </a>
                 </button>
                 <button id="menu-button">
-                    <a href="/crearMenu">
+                    <a href="/crearMenu/{{idRestaurante}}">
                         <img src="/img/menuicono.png" alt="creacion"><span id="menu-text">Creacion de menus</span>
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito">
+                    <a href="/carrito/{{idRestaurante}}">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
@@ -38,7 +38,7 @@
                     </a>
                 </button>
                 <button id="visualizar-button">
-                    <a href="/visualizar">
+                    <a href="/visualizar/{{idRestaurante}}">
                         <img src="/img/visulaizarmenuicono.png" alt="visualizar"><span id="visualizar-text">Visualizar menu</span>
                     </a>
                 </button>
