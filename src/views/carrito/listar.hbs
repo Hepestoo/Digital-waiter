@@ -9,6 +9,10 @@
 </head>
 <body>
 
+    {{#each lista}}
+
+    <form action="/carrito/listar/{{idRestaurante}}" method="get"></form>
+
     <div id="sidebar">
         <h1>Bienvenido</h1>
         <ul>
@@ -172,6 +176,7 @@
         </div>
 
     </div>
+    {{/each}}
 
 </body>
 </html>
