@@ -6,7 +6,7 @@ const {mostrar, listar, mandar, traer, actualizar, traer1 } = require('../contro
 router.get('/agregar',mostrar);
 //router.get('/agregar',traer1);
 router.post('/agregar',mandar);
-router.get('/listar',listar)
+router.get('/listar/:id',listar)
 router.get('/editar/:id',traer)
 router.post('/editar/:id',actualizar)
 

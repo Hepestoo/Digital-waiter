@@ -13,8 +13,10 @@ dashboard.showDashboard = async (req, res) => {
 dashboard.showForm = (req, res) => {
     res.render('dashboard/crearMenu')
 }
-dashboard.showMetodos = (req, res) => {
-    res.render('dashboard/metodos')
+dashboard.showMetodos = async (req, res) => {
+    const ids = req.params.id;
+    const lista = await sql.query('select * from restaurantes where idRestaurante = ?', [ids])
+    res.render('dashboard/metodos', {lista})
 }
 dashboard.showCarrito = (req, res) => {
     res.render('dashboard/carrito')

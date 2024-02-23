@@ -21,15 +21,16 @@ metodos.mandar = async (req, res) => {
 
 metodos.traer = async(req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('select * from metodos where idMetodo = ?', [ids])
+    const lista = await sql.query('select * from metodos')
     res.render('metodos/editar', { lista })
 }
 
 
 metodos.listar = async(req, res) => {
-    const ids = req.params.id
+    const ids = req.params.id;
+    const listaRestaurante = await sql.query('select * from restaurantes where idRestaurante = ?', [ids])
     const lista = await sql.query('select * from metodos')
-    res.render('metodos/listar', { lista })
+    res.render('metodos/listar', { lista,listaRestaurante })
 }
 
 metodos.actualizar = async (req, res) => {

@@ -6,7 +6,7 @@ const { showDashboard, showForm, showMetodos, showCarrito, showMenu, listar } = 
 // Definición de las rutas
 rutas.get('/dashboard/:id', showDashboard);
 rutas.get('/crearMenu', showForm);
-rutas.get('/metodos', showMetodos);
+// rutas.get('/metodos', showMetodos);
 rutas.get('/visualizar', (req, res) => res.redirect('/visualizar/activos')); // Redireccionamiento a visualizar/activos
 rutas.get('/visualizar/:id', listar);
 rutas.get('/carrito', showCarrito);
