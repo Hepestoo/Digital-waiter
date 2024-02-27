@@ -57,7 +57,7 @@ body::after {
 }
 #main-content h1 {
     text-align: left;
-    margin-top: 90px;
+    margin-top: 60px;
     margin-left: 150px;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 3px solid #000000;
@@ -130,7 +130,7 @@ body::after {
     font-size: 20px;
     text-align: left;
     margin-left: 850px;
-    margin-top: -100px;
+    margin-top: -70px;
     font-family: 'Montserrat', sans-serif;
 }
 #user-info p {
@@ -141,7 +141,7 @@ body::after {
 }
 #user-info a img{
     margin-left: 740px;
-    margin-top:-85px;
+    margin-top:-55px;
     height: 23px;
     width: 23px;
 }
@@ -150,7 +150,7 @@ body::after {
     width: 50px;
     height: 50px;
     margin-left: 785px;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 /*tablas grandes*/
 #container{

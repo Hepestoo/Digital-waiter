@@ -8,6 +8,10 @@
     <title>Bienvenido</title>
 </head>
 <body>
+    {{#each lista}}
+
+    <form action="/metodos/agregar/{{idRestaurante}}" method="get"></form>
+    {{/each}}
 
     <div id="sidebar">
         <h1>Bienvenido</h1>
@@ -42,7 +46,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    
     <div id="main-content">
 
         <h1>Metodos de pago</h1>
@@ -58,7 +62,7 @@
     <div id="lineahorizontal"></div>
 
     <div id="card-general">
-        <a href="../metodos/listar"><img src="../img/atras.png"></a>
+        <a href="/metodos/listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
 
         <form action="/metodos/agregar" method="post">
 

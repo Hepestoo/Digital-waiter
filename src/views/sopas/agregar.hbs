@@ -15,7 +15,7 @@
     {{#each lista}}
 
     <form action="/sopas/agregar/{{idRestaurante}}" method="get"></form>
-
+    {{/each}}
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <ul>
@@ -49,7 +49,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    
     <div id="main-content">
 
         <h1>Creacion de la Sopa</h1>
@@ -63,7 +63,7 @@
         <div id="lineahorizontal"></div>
 
         <div id="card-container">
-            <a href="/crearMenu"><img src="../img/atras.png"></a>
+            <a href="/crearMenu/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <div id="card1">
 
                 <form action="/sopas/agregar" method="post">
@@ -83,6 +83,7 @@
             </div>
         </div>
     </div>
+    
     
 </body>
 

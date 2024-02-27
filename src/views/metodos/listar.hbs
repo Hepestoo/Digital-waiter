@@ -8,10 +8,10 @@
     <title>Bienvenido</title>
 </head>
 <body>
-    {{!-- {{#each lista}}
+    {{#each lista}}
     
-    <form action="/metodos/listar/{{idRestaurante}}" method="get"></form> --}}
-
+    <form action="/metodos/listar/{{idRestaurante}}" method="get"></form>
+    {{/each}}
     <div id="sidebar">
         <h1>Bienvenido</h1>
         <ul>
@@ -45,13 +45,13 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-    {{!-- {{/each}} --}}
+    
     <div id="main-content">
 
         <h1>Metodos de pago</h1>
         
         <div id="user-info">
-            <a href="/"><img src="../img/iconocasa.png"></a>
+            <a href="/"><img src="/img/iconocasa.png"></a>
             <img src="/img/usuarioicono.png">
             <h2>Samuel Robertson</h2>
             <p>Restaurante Administrador</p>
@@ -72,7 +72,7 @@
         <form action="metodos/listar/{{idRestaurante}}" method="get"></form>{{/each}}
             <div id="tablas">
                 <h1>Metodos de pago activos</h1>
-                <button><a href="/metodos/agregar">Agregar</a></button>
+                <button><a href="/metodos/agregar/{{idRestaurante}}">Agregar</a></button>
                 <h3>Todos los pagos</h3>
                 <hr>
                 <table>
@@ -89,7 +89,7 @@
                             <td><center>{{metodoPago}}</center></td>
                             <td><center>{{estado}}</center></td>
                             <td>
-                                <a href="/metodos/editar/{{idMetodo}}"><center><img src="../img/editar.png"></center></a>
+                                <a href="/metodos/editar/{{idMetodo}}"><center><img src="/img/editar.png"></center></a>
                             </td>
                         </tr>
                     {{/each}}

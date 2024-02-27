@@ -12,6 +12,7 @@
     {{#each lista}}
 
     <form action="/carrito/editar/{{idRestaurante}}" method="get"></form>
+    {{/each}}
 
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
@@ -60,7 +61,7 @@
         <div id="lineahorizontal"></div>
 
         <div id="card-container">
-            <a href="/carrito/listar"><img src="/img/atras.png"></a>
+            <a href="/carrito/listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <div id="card1">
                 {{#each lista}}
                 <form action="/carrito/editar/{{idCarro}}" method="post"> 
@@ -99,7 +100,7 @@
         </div>
         
     </div>
-    {{/each}}
+    
 </body>
 </html>
 

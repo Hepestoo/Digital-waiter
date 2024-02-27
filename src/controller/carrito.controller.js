@@ -22,6 +22,7 @@ carrito.mandar = async (req, res) => {
 
 carrito.listar = async(req, res) => {
     const ids = req.params.id
+    const listaCarrito = await sql.query('select * from restaurantes where idRestaurante =?', [ids])
     const lista = await sql.query('select * from carros')
     res.render('carrito/listar', { listaCarrito })
 }

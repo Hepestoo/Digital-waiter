@@ -5,7 +5,7 @@ const {mostrar, mandar, listar, traer, actualizar} = require('../controller/entr
 
 //*FUNCIONAL
 
-router.get('/agregar',mostrar);
+router.get('/agregar/:id',mostrar);
 router.post('/agregar',mandar)
 router.get('/listar/:id',listar)
 router.get('/editar/:id',traer)
