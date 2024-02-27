@@ -6,7 +6,7 @@ const {mostrar, mandar, listar, traer, actualizar} = require('../controller/sopa
 //*funcional
 router.get('/agregar',mostrar);
 router.post('/agregar', mandar);
-router.get('/listar', listar)
+router.get('/listar/:id', listar)
 router.get('/editar/:id', traer)
 router.post('/editar/:id', actualizar)
 

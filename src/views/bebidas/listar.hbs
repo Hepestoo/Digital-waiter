@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    {{#each lista}}
+    {{#each listaBebida}}
 
     <form action="/bebidas/listar/{{idRestaurante}}" method="get"></form>
 
@@ -47,7 +47,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    {{/each}}
     <div id="main-content">
 
         <h1>Lista de Bebidas</h1>
@@ -62,7 +62,7 @@
 
         <div id="plato-tarjeta">
             <h1>Bebidas</h1>
-            <a href="/crearMenu"><img src="../img/atras.png"></a>
+            <a href="/crearMenu/{{idRestaurante}}"><img src="/img/atras.png"></a>
 
             <form action="bebidas/listar/" method="get"></form>
 
@@ -87,6 +87,5 @@
 
         </div>
     </div>
-    {{/each}}
 </body>
 </html>

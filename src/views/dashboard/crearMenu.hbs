@@ -9,6 +9,11 @@
 </head>
 <body>
 
+    {{#each lista}}
+    
+    <form action="/crearMenu/{{idRestaurante}}" method="get"></form>
+    
+
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
 
@@ -127,5 +132,7 @@
         </tbody> --}}
         </div>
     </div>
+    {{/each}}
+
 </body>
 </html>

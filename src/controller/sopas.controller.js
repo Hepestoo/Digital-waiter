@@ -18,14 +18,15 @@ sopas.mandar = async(req, res) => {
         estado
     }
     await orm.sopas.create(nuevaSopa)
-    req.flash('success', 'Creaco con exito')
+    req.flash('success', 'Creado con exito')
     res.redirect('/sopas/listar/');
 }
 
 sopas.listar = async(req, res) => {
     const ids = req.params.id
+    const listaSopa = await sql.query('select * from restaurantes where idRestaurante =?', [ids])
     const lista = await sql.query('select * from sopas')
-    res.render('sopas/listar', { lista })
+    res.render('sopas/listar', { lista, listaSopa })
 }
 
 sopas.traer = async(req, res) => {

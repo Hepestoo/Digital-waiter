@@ -13,7 +13,7 @@
 
     <form  action = "/metodos/{{idRestaurante}} "  method = "get" ></form >
     
-
+    
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <ul>
@@ -47,7 +47,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    
     <div id="main-content">
 
         <h1>Metodos de pago</h1>
@@ -61,7 +61,7 @@
 
     </div>
     
-    <form action="metodos/listar/" method="get"></form>
+    <form action="metodos/listar/{{idRestaurante}}" method="get"></form>
     <div id="card-general">
         <div id="publicidad">
             <h1>LO LOGRAMOS!</h1>
@@ -75,7 +75,7 @@
 
         <div id="tablas">
             <h1>Metodos de pago activos</h1>
-            <button><a href="/metodos/agregar">Agregar</a></button>
+            <button><a href="/metodos/agregar/{{idRestaurante}}">Agregar</a></button>
             <h3>Todos los pagos</h3>
             <hr>
             <table>
@@ -96,6 +96,7 @@
                         </td>
                     </tr>
                 {{/each}}
+                
                 {{!-- <tr>
                     <td>{{metodoPago}}</td>
                     <td>{{estado}}</td>
@@ -117,7 +118,6 @@
         </div>
 
     </div>
-
     {{/each}}
 
 </body>

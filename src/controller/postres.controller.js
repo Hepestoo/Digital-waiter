@@ -29,8 +29,9 @@ postres.traer = async(req, res) => {
 
 postres.listar = async(req, res) => {
     const ids = req.params.id
+    const listaPostre = await sql.query('select * from restaurantes where idRestaurante =?', [ids])
     const lista = await sql.query('select * from postres')
-    res.render('postres/listar', { lista })
+    res.render('postres/listar', { lista, listaPostre })
 }
 
 postres.actualizar = async (req, res) => {

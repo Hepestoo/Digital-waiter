@@ -168,7 +168,7 @@ body::after {
     background-size: cover; /* Para que la imagen cubra todo el div */
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat; 
-    margin-top: 30px;
+    margin-top: 25px;
     margin-right: 20px;
     width: 250px;
     height: 590px;
@@ -182,7 +182,7 @@ body::after {
     background-size: cover; /* Para que la imagen cubra todo el div */
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat; 
-    margin-top: 110px;
+    margin-top: 80px;
     margin-right: 20px;
     width: 250px;
     height: 590px;
@@ -212,7 +212,7 @@ body::after {
     background-size: cover; /* Para que la imagen cubra todo el div */
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat; 
-    margin-top: 110px;
+    margin-top: 80px;
     width: 250px;
     height: 590px;
     box-sizing: border-box;

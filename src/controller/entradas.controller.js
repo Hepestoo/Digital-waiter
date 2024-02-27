@@ -23,8 +23,9 @@ entradas.mandar = async (req, res) => {
 
 entradas.listar = async(req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('select * from entradas ', [ids])
-    res.render('entradas/listar', { lista })
+    const listaEntrada = await sql.query('select * from restaurantes where idRestaurante =?', [ids])
+    const lista = await sql.query('select * from entradas')
+    res.render('entradas/listar', { lista, listaEntrada })
 }
 
 entradas.traer = async(req, res) => {

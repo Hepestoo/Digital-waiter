@@ -46,7 +46,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    {{/each}}
     <div id="main-content">
 
         <h1>Creacion de la Entrada</h1>
@@ -60,7 +60,7 @@
         <div id="lineahorizontal"></div>
 
         <div id="card-container">
-            <a href="/entradas/listar"><img src="/img/atras.png"></a>
+            <a href="/entradas/listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <div id="card1">
                 {{#each lista}}
                 <form action="/entradas/editar/{{idEntrada}}" method="post"> 
@@ -103,7 +103,7 @@
         </div>
         
     </div>
-    {{/each}}
+    
 </body>
 </html>
 

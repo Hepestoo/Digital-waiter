@@ -123,8 +123,8 @@ body::after {
 #lineahorizontal{
     background-color: #000000;
     border-top: 2px solid black;
-    margin: 20px 0 0 -20px;
-    width: 1181px;
+    margin: 10px 0 0 0;
+    width: 100%;
     float: center;
 }
 #user-info {
@@ -175,7 +175,7 @@ body::after {
     margin-top: 30px;
     margin-left: 70px;
     width: 900px;
-    height: 650px;
+    height: 600px;
     box-sizing: border-box;
     text-align: left; /* Alinea el texto a la izquierda */
     border-radius: 20px;

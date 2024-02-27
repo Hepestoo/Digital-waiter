@@ -15,7 +15,7 @@
     {{#each lista}}
 
     <form action="/postres/agregar/{{idRestaurante}}" method="get"></form>
-
+    {{/each}}
     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <ul>
@@ -49,7 +49,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    
     <div id="main-content">
 
         <h1>Creacion del Postre</h1>
@@ -63,7 +63,7 @@
         <div id="lineahorizontal"></div>
 
         <div id="card-container">
-            <a href="/crearMenu"><img src="../img/atras.png"></a>
+            <a href="/crearMenu/{{idRestaurante}}"><img src="../img/atras.png"></a>
             <div id="card1">
 
                 <form action="/postres/agregar" method="post">
@@ -82,7 +82,7 @@
             </div>
         </div>
     </div>
-    {{/each}}
+    
 </body>
 
 </html>

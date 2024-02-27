@@ -11,7 +11,7 @@ login.show = async (req, res) => {
 }
 
 login.sendLogin = passport.authenticate('local.signin', {
-    successRedirect: '/dashboard',
+    successRedirect: '/menu/lista/',
     failureFlash: '/login',
     failureFlash: true
 })

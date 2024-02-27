@@ -8,6 +8,9 @@
     <title>Bienvenido</title>
 </head>
 <body>
+    {{!-- {{#each lista}}
+    
+    <form action="/metodos/listar/{{idRestaurante}}" method="get"></form> --}}
 
     <div id="sidebar">
         <h1>Bienvenido</h1>
@@ -42,7 +45,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    {{!-- {{/each}} --}}
     <div id="main-content">
 
         <h1>Metodos de pago</h1>
@@ -61,54 +64,54 @@
             <h1>LO LOGRAMOS!</h1>
             <h3>Este año conseguimos<br>la michelin...</h3>
             <div>
-                <img src="/img/michelinstar.png">
+                <img src="../../img/michelinstar.png">
             </div>
         </div>
 
         {{#each listaRestaurante}}
-<form action="metodos/listar/{{idRestaurante}}" method="get"></form>{{/each}}
-        <div id="tablas">
-            <h1>Metodos de pago activos</h1>
-            <button><a href="/metodos/agregar">Agregar</a></button>
-            <h3>Todos los pagos</h3>
-            <hr>
-            <table>
-                <thead>
-                    <tr>
-                        <th>M. DE PAGO</th>
-                        <th>ESTADO</th>
-                        <th>EDITAR</th>
-                    </tr>
-                </thead>
-                <tbody>
-                {{#each lista}}
-                    <tr>
-                        <td><center>{{metodoPago}}</center></td>
-                        <td><center>{{estado}}</center></td>
+        <form action="metodos/listar/{{idRestaurante}}" method="get"></form>{{/each}}
+            <div id="tablas">
+                <h1>Metodos de pago activos</h1>
+                <button><a href="/metodos/agregar">Agregar</a></button>
+                <h3>Todos los pagos</h3>
+                <hr>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>M. DE PAGO</th>
+                            <th>ESTADO</th>
+                            <th>EDITAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{#each lista}}
+                        <tr>
+                            <td><center>{{metodoPago}}</center></td>
+                            <td><center>{{estado}}</center></td>
+                            <td>
+                                <a href="/metodos/editar/{{idMetodo}}"><center><img src="../img/editar.png"></center></a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    {{!-- <tr>
+                        <td>{{metodoPago}}</td>
+                        <td>{{estado}}</td>
                         <td>
-                            <a href="/metodos/editar/{{idMetodo}}"><center><img src="../img/editar.png"></center></a>
+                            <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
                         </td>
                     </tr>
-                {{/each}}
-                {{!-- <tr>
-                    <td>{{metodoPago}}</td>
-                    <td>{{estado}}</td>
-                    <td>
-                        <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>{{metodoPago}}</td>
-                    <td>{{estado}}</td>
-                    <td>
-                        <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
-                    </td>
-                </tr> --}}
-                </tbody> 
-            </table>
+                    <tr>
+                        <td>{{metodoPago}}</td>
+                        <td>{{estado}}</td>
+                        <td>
+                            <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
+                        </td>
+                    </tr> --}}
+                    </tbody> 
+                </table>
 
-        
-        </div>
+            
+            </div>
 
     </div>
 

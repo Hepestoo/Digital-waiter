@@ -23,8 +23,9 @@ bebidas.mandar = async (req, res) => {
 
 bebidas.listar = async(req, res) => {
     const ids = req.params.id
+    const listaBebida = await sql.query('select * from restaurantes where idRestaurante =?', [ids])
     const lista = await sql.query('select * from bebidas')
-    res.render('bebidas/listar', { lista })
+    res.render('bebidas/listar', { lista, listaBebida })
 }
 
 bebidas.traer = async(req, res) => {

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    {{#each lista}}
+    {{#each listaEntrada}}
 
     <form action="/entradas/listar/{{idRestaurante}}" method="get"></form>
 
@@ -47,7 +47,7 @@
         </ul>
         <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
-
+    {{/each}}
     <div id="main-content">
 
         <h1>Lista de las Entradas</h1>
@@ -63,7 +63,7 @@
 
         <div id="plato-tarjeta">
             <h1>Entradas</h1>
-            <a href="/crearMenu"><img src="../img/atras.png"></a>
+            <a href="/crearMenu/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <form action="entradas/listar/" method="get"></form>
 
             <div id="tarjetas-contenedor"> <!-- Nuevo contenedor para las tarjetas -->
@@ -86,8 +86,6 @@
         </div>
         
     </div>
-
-    {{/each}}
     
 </body>
 </html>
