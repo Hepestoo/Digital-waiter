@@ -8,11 +8,8 @@
     <title>Bienvenido</title>
 </head>
 <body>
-    {{#each lista}}
-    
-    <form action="/metodos/listar/{{idRestaurante}}" method="get"></form>
-    {{/each}}
-    <div id="sidebar">
+
+     <div id="sidebar">
         <h1>Bienvenido</h1>
         <ul>
             <li>
@@ -27,12 +24,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -43,8 +40,12 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
+   
+    
+    <form action="/metodos/listar/{{idRestaurante}}" method="get"></form>
+  
+    
     
     <div id="main-content">
 
@@ -53,8 +54,6 @@
         <div id="user-info">
             <a href="/"><img src="/img/iconocasa.png"></a>
             <img src="/img/usuarioicono.png">
-            <h2>Samuel Robertson</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
     </div>
@@ -89,24 +88,10 @@
                             <td><center>{{metodoPago}}</center></td>
                             <td><center>{{estado}}</center></td>
                             <td>
-                                <a href="/metodos/editar/{{idMetodo}}"><center><img src="/img/editar.png"></center></a>
+                                <a href="/metodos/{{../idRestaurante}}/editar/{{idMetodo}}"><center><img src="/img/editar.png"></center></a>
                             </td>
                         </tr>
                     {{/each}}
-                    {{!-- <tr>
-                        <td>{{metodoPago}}</td>
-                        <td>{{estado}}</td>
-                        <td>
-                            <a href="/metodos/editar/{{idMetodo}}"><img src="../img/editar.png"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>{{metodoPago}}</td>
-                        <td>{{estado}}</td>
-                        <td>
-                            <a href="/metodos/editar{{idMetodo}}"><img src="../img/editar.png"></a>
-                        </td>
-                    </tr> --}}
                     </tbody> 
                 </table>
 

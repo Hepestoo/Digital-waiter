@@ -47,7 +47,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
     
     <div id="main-content">
@@ -56,8 +55,6 @@
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
         <div id="lineahorizontal"></div>
@@ -66,7 +63,7 @@
             <a href="/crearMenu/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <div id="card1">
 
-                <form action="/sopas/agregar" method="post">
+                <form action="/sopas/agregar/{{idRestaurante}}" method="post">
                     <label for="nombre">Nombre de la sopa</label><br>
                     <input type="text" id="name" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
                     title="Solo se permiten letras y espacios" placeholder="Ingrese el nombre de la sopa" required>

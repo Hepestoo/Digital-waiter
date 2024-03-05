@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    {{#each lista}}
+    {{#each listaCarrito}}
 
     <form action="/carrito/listar/{{idRestaurante}}" method="get"></form>
     {{/each}}
@@ -28,12 +28,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -44,7 +44,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
 
     <div id="main-content">
@@ -54,8 +53,6 @@
         <div id="user-info">
             <a href="/"><img src="/img/iconocasa.png"></a>
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
     </div>
@@ -105,70 +102,20 @@
             <form action="carrito/listar/" method="get"></form>
                 <div id="categorias">
                 <h1>Categorias</h1>
-                {{#each lista}}
+                {{#each listaCarrito}}
                     <div id="secciones">
-
                         <div id="izquierda">
                             <h2>{{nombre}}</h2>
                             <h4>Limite de: {{limite}} unidades</h4>
-                            <button id="editar"><a href="/carrito/editar/{{idCarro}}">Editar</a></button>
+                            <button class="btn"><a href="/carrito/{{../idRestaurante}}/editar/{{idCarro}}">Editar</a></button>
                         </div>
                         <div id="derecha">
                             <button id="boton-activo"><a href="">{{estado}}</a></button>
                         </div>
+
+                    </div>
+                {{/each}}
                 
-                        
-
-                    </div>
-
-                    <hr>
-
-                {{!-- <div id="secciones">
-
-                        <div id="izquierda">
-                            <h2>Sopas</h2>
-                            <h4>Max 3 c/u</h4>
-                            <button id="editar"><a href="/carrito/editar">Editar</a></button>
-                        </div>
-                        <div id="derecha">
-                            <button id="boton-activo"><a href="">Activo</a></button>
-                            <button id="boton-inactivo"><a href="">Inactivo</a></button>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <div id="secciones">
-
-                        <div id="izquierda">
-                            <h2>Postres</h2>
-                            <h4>Max 4 c/u</h4>
-                            <button id="editar"><a href="/carrito/editar">Editar</a></button>
-                        </div>
-                        <div id="derecha">
-                            <button id="boton-activo"><a href="">Activo</a></button>
-                            <button id="boton-inactivo"><a href="">Inactivo</a></button>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <div id="secciones">
-
-                        <div id="izquierda">
-                            <h2>Bebidas</h2>
-                            <h4>Max 3 c/u</h4>
-                            <button id="editar"><a href="/carrito/editar">Editar</a></button>
-                        </div>
-                        <div id="derecha">
-                            <button id="boton-activo"><a href="">Activo</a></button>
-                            <button id="boton-inactivo"><a href="">Inactivo</a></button>
-                        </div>
-
-                    </div>  --}}
-                    {{/each}}
 
                 </div>
             </div>

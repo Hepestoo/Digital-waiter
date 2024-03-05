@@ -43,7 +43,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
     {{/each}}
     <div id="main-content">
@@ -52,8 +51,6 @@
         
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Samuel Robertson</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
     </div>
@@ -61,9 +58,9 @@
     <div id="lineahorizontal"></div>
 
     <div id="card-general">
-        <a href="../listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
+        <a href="../../listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
         {{#each lista}}
-        <form action="/metodos/editar/{{idMetodo}}" method="post">
+        <form action="/metodos/{{../idRestaurante}}/editar/{{idMetodo}}" method="post">
 
             <label for="nombre">Metodo de pago</label><br>
             <input type="text" id="name" name="metodoPago" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
@@ -71,24 +68,6 @@
             <label for="nombre">Estado</label><br>
             <input type="text" id="location" name="estado" value="{{estado}}" pattern="(activo|desactivo|pendiente)" title="Solo se admite: activo, desactivo o pendiente"
                     placeholder="Ingrese el estado" required>
-            {{!-- <div id="estado">
-            <h1>Estado</h1>
-
-                <div id="activo">
-        <label for="activo">Activo</label>
-        <input type="radio" name="estado" value="{{activo}}">
-                </div>
-
-                <div id="inactivo">
-        <label for="inactivo">Inactivo</label>
-        <input type="radio" name="estado" value="{{inactivo}}">
-                </div>
-
-                <div id="pendiente">
-        <label for="pendiente">Pendiente</label>
-        <input type="radio" name="estado" value="{{pendiente}}">
-                </div>
-            </div> --}}
 
             <button id="listo-btn" type="submit">Guardar</button>
         {{/each}}

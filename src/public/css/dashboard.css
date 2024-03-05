@@ -7,8 +7,7 @@
 
 body::after {
     content: "";
-    background: url(../img/fondo.png);
-    opacity: 0.1;
+    background-color: #FFEEF2;
     top: 0;
     left: 0;
     bottom: 0;
@@ -23,7 +22,7 @@ body::after {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #F3DBC3;
+    background-color: rgba(255, 187, 203, 0.7);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -121,31 +120,13 @@ body::after {
     text-decoration: none;
     color: #333333;
 }
-#logoizquierdo{
-    width: 250px;
-    height: 60px;
-    margin-top: 100px;
-}
 #user-info {
     align-items: right;
     text-align: left;
 }
-#user-info h2 {
-    font-size: 20px;
-    text-align: left;
-    margin-left: 850px;
-    margin-top: -60px;
-    font-family: 'Montserrat', sans-serif;
-}
-#user-info p {
-    font-size: 15px;
-    text-align: left;
-    margin-left: 850px;
-    font-family: 'Montserrat', sans-serif;
-}
 #user-info a img{
-    margin-left: 740px;
-    margin-top:-45px;
+    margin-left: 1060px;
+    margin-top:-42px;
     height: 23px;
     width: 23px;
 }
@@ -153,8 +134,8 @@ body::after {
     position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: 785px;
-    margin-top: -60px;
+    margin-left: 1100px;
+    margin-top: -55px;
 }
 #franja {
     display: flex;
@@ -166,12 +147,11 @@ body::after {
     position: absolute;
     width: 720px; /* Resté el ancho del sidebar al 100% */
     height: 150px;
-    margin-top: 5px;
-    margin-left: 370px; /* Ajusta el margen izquierdo según sea necesario */
+    margin-top: 20px;
+    margin-left: 350px; /* Ajusta el margen izquierdo según sea necesario */
     border-radius: 20px;
     border-bottom: #000000;
 }
-
 #welcome-message h1{
     color: #FFFFFF;
     margin-left: 50px;
@@ -193,132 +173,55 @@ body::after {
     margin-top: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-/*publicidad bebidas*/
+/*menus*/
 #publicidad1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/publi1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 270px;
-    height: 320px;
+    width: 200px;
+    height: 650px;
     position: absolute;
-    left: 1110px;
-    border-radius: 10px;
+    left: 1090px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 #publicidad1 h1{
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 50px;
+    margin-left: 10px;
     font-size: 35px;
     font-weight: bold;
     color: #FF5C00;
 }
-#franja-plato{
-    background-color: #BDBCBC;
-    border-radius: 10px;
-    margin-top: 60px;
-    margin-left: 20px;
-    width: 230px;
-    height: 40px;
-}
-#franja-plato h1{
-    color: #000000;
-    font-weight: 400;
+#publicidad1 h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #C1B8B8;
     font-size: 20px;
-    margin-left: 5px;
-    padding-top: 5px;
+    padding-left: 20px;
+    margin-top: 100px;
 }
 #publicidad1 button{
     background-color: #0085FF;
     width: 150px;
-    height: 35px;
-    border-radius: 10px;
-    margin-left: 60px;
-    margin-top: 40px;
+    height: 30px;
     border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 100px;
+    cursor: pointer;
 }
 #publicidad1 a{
     color: #FFFFFF;
+    font-weight: bold;
     text-decoration: none;
-}
-/*botones de pedidos*/
-#info-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 170px;
-    margin-left: 490px;
-    width: 500px;
-    border-radius: 10px;
-}
-#info-buttons a {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center;
 }
 
-#pedidos-dia button {
-    background-color: #E5F1B7;
-    margin: 0 10px;
-    width: 120px;
-    height: 130px;
-    cursor: pointer;
-    color: #000000;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
-#pedidos-anulados button {
-    background-color: #EED7B8;
-    margin: 0 10px;
-    width: 120px;
-    height: 130px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
-#pedidos-entregados button {
-    background-color: #EAE7B9;
-    margin: 0 10px;
-    width: 120px;
-    height: 130px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
-#pedidos-pendientes button {
-    background-color: #F1E1BD;
-    margin: 0 10px;
-    width: 120px;
-    height: 130px;
-    cursor: pointer;
-    border: 1px solid #000000;
-    border-radius: 10px;
-}
-#pedidos-dia a,
-#pedidos-anulados a,
-#pedidos-entregados a,
-#pedidos-pendientes a {
-    text-decoration: none;
-    font-size: 15px;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-#pedidos-dia img,
-#pedidos-anulados img,
-#pedidos-entregados img,
-#pedidos-pendientes img {
-    width: 40px;
-    height: 40px;
-    padding-left: 5px;
-}
-/*publicidad- hamburguesa*/
-#publicidad2{
+#metodos{
     background-color: #E2CAFA;
-    margin-left: 370px;
-    margin-top: 20px;
+    margin-left: 350px;
+    margin-top: 190px;
     width: 720px;
     height: 180px;
     border-radius: 20px;
@@ -326,21 +229,21 @@ body::after {
     justify-content: space-between;
     border: 2px solid #000000;
 }
-#publicidad2 h1{
+#metodos h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding-left: 30px;
     font-size: 30px;
     padding-top: 10px;
 }
-#publicidad2 h2{
+#metodos h2{
     font-family: 'Montserrat', sans-serif;
     color: #828282;
     padding-top: 10px;
     padding-left: 90px;
     font-size: 20px;
 }
-#publicidad2 button{
+#metodos button{
     background-color: #9C2626;
     border-radius: 10px;
     cursor: pointer;
@@ -350,11 +253,11 @@ body::after {
     margin-left: 150px;
     margin-top: 10px;
 }
-#publicidad2 a{
+#metodos a{
     text-decoration: none;
     color: #FFFFFF;
 }
-#publicidad2 img{
+#metodos img{
     margin-top: -15px;
     width: 300px;
     height: 240px;
@@ -362,34 +265,36 @@ body::after {
 /*gestion*/
 #gestion{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/confirmarpedido.jpeg);
-    height: 350px;
-    width: 270px;
+    height: 650px;
+    width: 200px;
     position: absolute;
-    left: 1110px;
-    border-radius: 10px;
-    margin-top: -160px;
+    left: 1310px;
+    border-radius: 20px;
+    margin-top: -350px;
 }
 #gestion h1{
     font-family: 'Montserrat', sans-serif;
     color: #CA5FEF;
+    margin-top: 50px;
+    font-size: 35px;
     font-weight: bold;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 10px;
 }
 #gestion h3{
     font-family: 'Montserrat', sans-serif;
     color: #C1B8B8;
     font-size: 20px;
     padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 #gestion button{
     background-color: #0085FF;
     width: 150px;
     height: 30px;
     border: none;
-    margin-left: 50px;
-    margin-top: 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 100px;
     cursor: pointer;
 }
 #gestion a{
@@ -400,7 +305,7 @@ body::after {
 }
 /*menus*/
 #menus{
-    margin-left: 370px;
+    margin-left: 350px;
     width: 720px;
     height: 200px;
     margin-top: 10px;
@@ -417,10 +322,10 @@ body::after {
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat; 
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right: 20px;
-    width: 140px;
-    height: 150px;
+    width: 160px;
+    height: 260px;
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
@@ -433,8 +338,8 @@ body::after {
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-right: 20px;
-    width: 140px;
-    height: 150px;
+    width: 160px;
+    height: 260px;
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
@@ -447,8 +352,8 @@ body::after {
     background-repeat: no-repeat;
     border-radius: 10px;
     margin-right: 20px;
-    width: 140px;
-    height: 150px;
+    width: 160px;
+    height: 260px;
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
@@ -460,8 +365,8 @@ body::after {
     background-position: center; /* Para centrar la imagen */
     background-repeat: no-repeat;
     border-radius: 10px;
-    width: 140px;
-    height: 150px;
+    width: 160px;
+    height: 260px;
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
@@ -471,7 +376,7 @@ body::after {
 #card3 button,
 #card4 button{
     background-color: #0085FF;
-    margin-top: 50px;
+    margin-top: 100px;
     border: none;
     font-size: 20px;
     width: 100px;
@@ -485,7 +390,7 @@ body::after {
     color: #FFFFFF;
     font-size: 25px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 #card1 a,
 #card2 a,

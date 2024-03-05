@@ -1,8 +1,4 @@
 const login = {}
-
-
-
-
 const passport = require("passport")
 
 //!LOGIN
@@ -11,11 +7,10 @@ login.show = async (req, res) => {
 }
 
 login.sendLogin = passport.authenticate('local.signin', {
-    successRedirect: '/menu/lista/',
+    successRedirect: '/tienda/lista/',
     failureFlash: '/login',
     failureFlash: true
 })
-
 
 //!REGISTRO
 
@@ -37,9 +32,4 @@ login.sendRegistro = passport.authenticate('local.signup', {
 login.showRegister = async (req, res) => {
     res.render('login/registro')
 }
-
-
-
-
-
 module.exports = login

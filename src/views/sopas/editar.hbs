@@ -45,7 +45,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
     
     <div id="main-content">
@@ -54,8 +53,6 @@
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
         <div id="lineahorizontal"></div>
@@ -64,7 +61,7 @@
             <a href="/sopas/listar/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <div id="card1">
                 {{#each lista}}
-                <form action="/sopas/editar/{{idSopa}}" method="post"> 
+                <form action="/sopas/{{../idRestaurante}}/editar/{{idSopa}}" method="post"> 
                     <label for="nombre">Nombre de la entrada</label><br>
                     <input type="text" id="name" name="nombre" value="{{nombre}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
                     title="Solo se permiten letras y espacios" placeholder="Ingrese el nombre del plato" required>
@@ -79,23 +76,6 @@
                     <input type="text" id="location" name="estado" value="{{estado}}" pattern="(activo|desactivo)" title="Solo se admite: asctivo o desactivo"
                     placeholder="Ingrese el precio del plato" required>
 
-                    {{!-- <div id="subir-archivo">
-                        <label for="logo">Imagen:</label>
-                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
-                        <h3>Subir una imagen 
-                            <input type="file" name="imageRestaurant" id="inputImagen" accept="images/*"> 
-                            <label for="inputImagen">Cargar imagen</label></h3>
-                    </div> --}}
-
-                    {{!-- <div id="tipo-de-comida">
-                        <label for="tipoComida">Categoria:</label>
-                        <select id="tipoComida" name="categoria">
-                            <option value="Entradas">Entradas</option>
-                            <option value="Sopas">Sopas</option>
-                            <option value="Postros">Postres</option>
-                            <option value="Snacks">Snacks</option>
-                        </select>
-                    </div> --}}
                     <br>
                     <button id="listo-btn" type="submit">Guardar</button>
 

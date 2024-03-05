@@ -21,7 +21,7 @@ body::after {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #F3DBC3;
+    background-color: rgba(255, 187, 203, 0.7);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -76,7 +76,7 @@ body::after {
 }
 #main-content h1 {
     text-align: left;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -84,7 +84,7 @@ body::after {
 #lineahorizontal{
     background-color: #000000;
     border-top: 2px solid black;
-    margin: 20px 0 0 -20px;
+    margin: 10px 0 0 0;
     width: 100%;
     float: center;
 }
@@ -114,7 +114,7 @@ body::after {
     margin-top: 40px;
     margin-left: 80px;
     width: 900px;
-    height: 650px;
+    height: 600px;
     box-sizing: border-box;
     text-align: left; /* Alinea el texto a la izquierda */
     border-radius: 20px;
@@ -123,7 +123,7 @@ body::after {
 
 #card1 form {
     margin-top: 20px; /* Ajusta el margen superior del formulario según tus necesidades */
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 #card1 label {
@@ -137,63 +137,22 @@ body::after {
 #card1 input {
     font-family: 'Montserrat', sans-serif;
     background-color: #E3E2E2;
-    width: 89%; /* Ajusta el ancho de los inputs para que ocupen todo el contenedor */
+    width: 100%; /* Ajusta el ancho de los inputs para que ocupen todo el contenedor */
     height: 60px;
     font-size: 20px;
     box-sizing: border-box;
-    margin-bottom: 10px; /* Añade espacio entre los inputs */
-    border-radius: 10px;
+    margin-bottom: 5px; /* Añade espacio entre los inputs */
+    margin-top: -20px;
+    border-radius: 20px;
     padding-left: 20px;
     border: none;
 }
-#subir-archivo{
-    background-color: #E3E2E2;
-    width: 45%;
-    height: 250px;
-    display: inline-block;
-    border-radius: 20px;    
-    margin-top: 30px;
-    margin-right: 10px;
-}
-#subir-archivo h3{
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 20px;
-    font-size: 13px;
-    padding-bottom: 20px;
-}
-#subir-archivo label{
-    font-family: 'Montserrat', sans-serif;
-    color: #000000;
-    padding-top: 15px;
-    padding-left: 10px;
-    font-size: 25px;
-}
-#subir-img-medio{
-    display: block;
-    margin: 0 auto;
-    width: 130px;
-    height: 130px;
-}
 
-#subir-archivo h3 label {
-    display: inline-block;
-    background-color: #CDCACA;
-    cursor: pointer;
-    border-radius: 10px;
-    font-family: 'Montserrat', sans-serif;
-    width: 190px;
-    height: 35px;
-    font-size: 20px;
-}
-
-#subir-archivo h3 label:hover {
-    background-color: #80b082;
-}
 #tipo-de-comida{
     width: 40%;
     display: inline-block;
     vertical-align: top;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #tipo-de-comida label{
     font-family: 'Montserrat', sans-serif;
@@ -209,11 +168,11 @@ body::after {
 }
 #listo-btn{
     font-family: 'Montserrat', sans-serif;
-    width: 250px;
+    width: 300px;
     height: 50px;
     display: block;
-    margin-left: 300px;
-    margin-top: 100px;
+    margin-left: 250px;
+    margin-top: 70px;
     border-radius: 20px;
     border: none;
     background-color: #0085FF;

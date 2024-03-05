@@ -21,7 +21,7 @@ body::after {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #F3DBC3;
+    background-color: rgba(255, 187, 203, 0.7); 
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -40,10 +40,8 @@ body::after {
     padding: 0;
     margin: 0;
 }
-#sidebar ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #333333;
-    color: #333333;
+#sidebar ul li {   
+    background-color: aqua;
     text-align: center;
     cursor: pointer;
 }
@@ -74,36 +72,13 @@ body::after {
 }
 #main-content h1 {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
     font-family: 'Montserrat', sans-serif;
     border-bottom: 3px solid #000000;
     font-size: 20px;
 }
-#user-info {
-    align-items: right;
-    text-align: left;
-}
-#user-info h2 {
-    font-size: 20px;
-    text-align: left;
-    margin-left: 850px;
-    margin-top: -100px;
-    font-family: 'Montserrat', sans-serif;
-}
-#user-info p {
-    font-size: 15px;
-    text-align: left;
-    margin-left: 850px;
-    font-family: 'Montserrat', sans-serif;
-}
-#user-info img {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    margin-left: 785px;
-    margin-top: -100px;
-}
+
 #card-container {
     display: flex;
     flex-wrap: wrap;
@@ -113,10 +88,11 @@ body::after {
 }
 #card1 {
     background-color: #FFFFFF;
-    padding: 60px 0;
+    padding: 40px 0;
     margin: 0 22px;
     width: 300px;
     height: 300px;
+    border-radius: 20px;
     box-sizing: border-box;
     text-align: center;
     border-color: #000000;

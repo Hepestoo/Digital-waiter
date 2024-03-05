@@ -8,14 +8,8 @@
     <title>Bienvenido</title>
 </head>
 <body>
-
-    {{#each lista}}
-
-    <form action="/carrito/agregar/{{idRestaurante}}" method="get"></form>
-    {{/each}}
-
-    <div id="sidebar">
-        <h1>Bienvenido</h1><br>
+     <div id="sidebar">
+        <h1>Bienvenido</h1>
         <ul>
             <li>
                 <button id="dashboard-button">
@@ -29,12 +23,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -45,8 +39,12 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
-    </div> 
+    </div>
+
+
+    <form action="/carrito/agregar/{{idRestaurante}}" method="post">
+    
+  
     
     <div id="main-content">
 
@@ -54,17 +52,15 @@
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
         <div id="lineahorizontal"></div>
 
         <div id="card-container">
-            <a href="/carrito/{{idRestaurante}}"><img src="/img/atras.png"></a>
+            <a href="../{{idRestaurante}}/listar"><img src="/img/atras.png"></a>
             <div id="card1">
 
-                <form action="/carrito/agregar" method="post"> 
+                
                     <label for="nombre">Nombre</label><br>
                     <input type="text" id="name" name="nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" 
                     title="Solo se permiten letras y espacios" placeholder="Ingrese el nombre del plato" required>
@@ -72,34 +68,16 @@
                     <input type="text" id="location" name="limite" pattern="[1-9][0-9]?" maxlength="1" placeholder="Ingrese el limite del plato" required>
                     <label for="location">Estado</label><br>
                     <input type="text" id="location" name="estado" 
-                    pattern="(activo|desactivo)" title="Solo se admite: asctivo o desactivo" placeholder="Ingrese el estado" required>
-
-                    {{!-- <div id="subir-archivo">
-                        <label for="logo">Imagen:</label>
-                        <img id="subir-img-medio" src="img/imagenform.png" alt="imagen">
-                        <h3>Subir una imagen 
-                            <input type="file" name="imageRestaurant" id="inputImagen" accept="images/*"> 
-                            <label for="inputImagen">Cargar imagen</label></h3>
-                    </div>  --}}
-
-                    {{!-- <div id="tipo-de-comida">
-                        <label for="tipoComida">Categoria:</label>
-                        <select id="tipoComida" name="categoria">
-                            <option value="Entradas">Entradas</option>
-                            <option value="Sopas">Sopas</option>
-                            <option value="Postros">Postres</option>
-                            <option value="Snacks">Snacks</option>
-                        </select>
-                    </div> --}}
+                    pattern="(activo|desactivo)" title="Solo se admite: activo o desactivo" placeholder="Ingrese el estado" required>
                     <br>
                     <button id="listo-btn" type="submit">Guardar</button>
 
-                </form>
+                
             </div>
         </div>
         
     </div>
-    
+    </form>
 </body>
 </html>
 

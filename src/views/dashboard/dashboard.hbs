@@ -8,12 +8,9 @@
     <title>Bienvenido</title>
 </head>
 <body>
-    
+   
     {{#each lista}}
-    
-    <form action="/dashboard/{{idRestaurante}}" method="get"></form>
-
-    <div id="sidebar">
+     <div id="sidebar">
         <h1>Bienvenido</h1><br>
         <ul>
             <li>
@@ -28,12 +25,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -44,8 +41,10 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
+    <form action="/dashboard/{{idRestaurante}}" method="get"></form>
+
+    
 
     <div id="main-content">
 
@@ -54,8 +53,6 @@
         <div id="user-info">
             <a href="/"><img src="../img/iconocasa.png"></a>
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
         
     </div>
@@ -70,30 +67,14 @@
 
     <div id="publicidad1">
         <h1>Menus para visualizar</h1>
-        <div id="franja-plato">
-            <h1>1 menu para visualizar</h1>
-        </div>
+            <h3>Aqui puedes visualizar el menu del restaurante enlistado</h3>
         <div>
             <button><a href="/visualizar/{{idRestaurante}}">Ir a menu</a></button>
         </div>
     </div>
 
-    <div id="info-buttons">
-            <div id="pedidos-dia">
-                <button><a href=""><img src="/img/pedidosicono.png" alt="icon">Pedidos en el día<br>55</a></button>
-            </div>
-            <div id="pedidos-anulados">
-                <button><a href=""><img src="/img/rechazadoicono.png" alt="icon">Pedidos anulados<br>55</a></button>
-            </div>
-            <div id="pedidos-entregados">
-                <button><a href=""><img src="/img/entregadoicono.png" alt="icon">Pedidos entregados<br>55</a></button>
-            </div>
-            <div id="pedidos-pendientes">
-                <button><a href=""><img src="/img/pendienteicono.png" alt="icon">Pedidos pendientes<br>55</a></button>
-            </div>
-    </div>
 
-    <div id="publicidad2">
+    <div id="metodos">
     <div>
         <h1>Metodos de pago</h1>
         <h2>Gestiona tus metodos de pago de manera efectiva</h2>
@@ -108,12 +89,12 @@
         <h1>Gestion de pedidos</h1>
         <h3>Aqui puedes gestionar los pedidos del restaurante con sus limitantes</h3>
         <div>
-            <button><a href="/carrito/listar/{{idRestaurante}}">Ver</a></button>
+            <button><a href="/carrito/{{idRestaurante}}/listar">Ver</a></button>
         </div>
     </div>
 
     <div id="menus">
-        <h1>Menus</h1>
+        <h1>Creacion de menus</h1>
         <div id="card1">
             <h1>Entradas</h1>
             <button><a href="/entradas/listar/{{idRestaurante}}">Ver</a></button>

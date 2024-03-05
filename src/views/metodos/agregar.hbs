@@ -8,12 +8,7 @@
     <title>Bienvenido</title>
 </head>
 <body>
-    {{#each lista}}
-
-    <form action="/metodos/agregar/{{idRestaurante}}" method="get"></form>
-    {{/each}}
-
-    <div id="sidebar">
+     <div id="sidebar">
         <h1>Bienvenido</h1>
         <ul>
             <li>
@@ -28,12 +23,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -44,8 +39,13 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
+    {{#each lista}}
+
+    <form action="/metodos/agregar/{{idRestaurante}}" method="get"></form>
+    {{/each}}
+
+    
     
     <div id="main-content">
 
@@ -53,8 +53,6 @@
         
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
     </div>
@@ -72,24 +70,6 @@
                     <label for="nombre">Estado</label><br>
             <input type="text" id="location" name="estado" pattern="(activo|desactivo|pendiente)" title="Solo se admite: activo, desactivo o pendiente"
                     placeholder="Ingrese el estado" required>
-            {{!-- <div id="estado">
-            <h1>Estado</h1>
-
-                <div id="activo">
-        <label for="activo">Activo</label>
-        <input type="radio" name="estado" value="activo">
-                </div>
-
-                <div id="inactivo">
-        <label for="inactivo">Inactivo</label>
-        <input type="radio" name="estado" value="inactivo">
-                </div>
-
-                <div id="pendiente">
-        <label for="pendiente">Pendiente</label>
-        <input type="radio" name="estado" value="pendiente">
-                </div>
-            </div> --}}
 
             <button id="listo-btn" type="submit">Guardar</button>
 

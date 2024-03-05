@@ -21,7 +21,7 @@ body::after {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #F3DBC3;
+    background-color: rgba(255, 187, 203, 0.7);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -73,7 +73,7 @@ body::after {
 }
 #main-content h1 {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;

@@ -6,8 +6,7 @@
 }
 body::after {
     content: "";
-    background: url(../img/fondo.png);
-    opacity: 0.1;
+    background-color: #F8E7FF;
     top: 0;
     left: 0;
     bottom: 0;
@@ -21,7 +20,7 @@ body::after {
     position: fixed;
     width: 300px;
     height: 100%;
-    background: #F3DBC3;
+    background-color: rgba(239, 186, 255, 0.7);
     padding: 20px;
     box-sizing: border-box;
     overflow: auto;
@@ -130,11 +129,6 @@ body::after {
     text-decoration: none;
     color: #333333;
 }
-#logoizquierdo{
-    width: 250px;
-    height: 60px;
-    margin-top: 100px;
-}
 #lineahorizontal{
     background-color: #000000;
     border-top: 2px solid black;
@@ -146,24 +140,18 @@ body::after {
     align-items: right;
     text-align: left;
 }
-#user-info h2 {
-    font-size: 20px;
-    text-align: left;
-    margin-left: 850px;
-    margin-top: -70px;
-    font-family: 'Montserrat', sans-serif;
-}
-#user-info p {
-    font-size: 15px;
-    text-align: left;
-    margin-left: 850px;
-    font-family: 'Montserrat', sans-serif;
+#user-info a img{
+    margin-left: 1060px;
+    margin-top:-42px;
+    height: 23px;
+    width: 23px;
 }
 #user-info img {
+    position: absolute;
     width: 50px;
     height: 50px;
-    margin-left: 785px;
-    margin-top: -70px;
+    margin-left: 1100px;
+    margin-top: -55px;
 }
 #card-container {
     display: flex;

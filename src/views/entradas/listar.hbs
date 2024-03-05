@@ -29,7 +29,7 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
@@ -45,7 +45,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
     {{/each}}
     <div id="main-content">
@@ -55,8 +54,7 @@
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
+
         </div>
 
         <div id="lineahorizontal"></div>
@@ -66,7 +64,7 @@
             <a href="/crearMenu/{{idRestaurante}}"><img src="/img/atras.png"></a>
             <form action="entradas/listar/" method="get"></form>
 
-            <div id="tarjetas-contenedor"> <!-- Nuevo contenedor para las tarjetas -->
+            <div id="tarjetas-contenedor">
                 {{#each lista}}
                 <center>
                 <div id="tarjeta">
@@ -78,7 +76,7 @@
                     <p>{{precio}}</p><br>
                     <b>Estado:</b>
                     <p>{{estado}}</p><br>
-                    <a href="/entradas/editar/{{idEntrada}}"><button type="submit">Editar</button></a>
+                    <a href="/entradas/{{../idRestaurante}}/editar/{{idEntrada}}"><button type="submit">Editar</button></a>
                 </div>
                 </center>
                 {{/each}}

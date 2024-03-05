@@ -5,10 +5,10 @@ const {mostrar, mandar, listar, traer, actualizar} = require('../controller/sopa
 
 //*funcional
 router.get('/agregar/:id',mostrar);
-router.post('/agregar', mandar);
+router.post('/agregar/:id', mandar);
 router.get('/listar/:id', listar)
-router.get('/editar/:id', traer)
-router.post('/editar/:id', actualizar)
+router.get('/:ida/editar/:id', traer)
+router.post('/:ida/editar/:id', actualizar)
 
 
 module.exports = router

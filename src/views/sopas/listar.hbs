@@ -45,7 +45,6 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
 
     {{/each}}
@@ -56,8 +55,6 @@
 
         <div id="user-info">
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
         <div id="lineahorizontal"></div>
@@ -81,7 +78,7 @@
                     <p>{{precio}}</p><br>
                     <b>Estado:</b>
                     <p>{{estado}}</p><br>
-                    <a href="/sopas/editar/{{idSopa}}"><button type="submit">Editar</button></a>
+                  <a href="../../sopas/{{../idRestaurante}}/editar/{{idSopa}}"><button type="submit">Editar</button></a>
                 </div>
                 </center>
                 {{/each}}

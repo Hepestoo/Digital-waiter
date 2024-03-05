@@ -8,15 +8,11 @@
     <title>Bienvenido</title>
 </head>
 <body>
+    
 
     {{#each lista}}
-    
-    <form action="/crearMenu/{{idRestaurante}}" method="get"></form>
-    
-
-    <div id="sidebar">
-        <h1>Bienvenido</h1><br>
-
+     <div id="sidebar">
+        <h1>Bienvenido</h1>
         <ul>
             <li>
                 <button id="dashboard-button">
@@ -30,12 +26,12 @@
                     </a>
                 </button>
                 <button id="carrito-button">
-                    <a href="/carrito/{{idRestaurante}}">
+                    <a href="/carrito/{{idRestaurante}}/listar">
                         <img src="/img/carritoicono.png" alt="carrito"><span id="carrito-text">Carrito de compras</span>
                     </a>
                 </button>
                 <button id="metodos-button">
-                    <a href="/metodos/{{idRestaurante}}">
+                    <a href="/metodos/listar/{{idRestaurante}}">
                         <img src="/img/tarjetaicono.png" alt="metodos"><span id="metodos-text">Metodos de pagos</span>
                     </a>
                 </button>
@@ -46,8 +42,11 @@
                 </button>
             </li>
         </ul>
-        <img src="/img/logo1.jpg" id="logoizquierdo">
     </div>
+    <form action="/crearMenu/{{idRestaurante}}" method="get"></form>
+    
+
+   
 
     <div id="main-content">
 
@@ -56,8 +55,6 @@
         <div id="user-info">
             <a href="/"><img src="/img/iconocasa.png"></a>
             <img src="/img/usuarioicono.png">
-            <h2>Digital Waiter</h2>
-            <p>Restaurante Administrador</p>
         </div>
 
         <div id="lineahorizontal"></div>
@@ -65,31 +62,31 @@
         <div id="card-container">
             <div id="card1">
                 <h1>Entradas</h1>
-                <button><a href="/entradas/agregar">Agregar</a></button>
+                <button><a href="/entradas/agregar/{{idRestaurante}}">Agregar</a></button>
                 <div id="ver-todos">
-                    <button><a href="/entradas/listar">Ver todos</a></button>
+                    <button><a href="/entradas/listar/{{idRestaurante}}">Ver todos</a></button>
                 </div>
                 
             </div>
             <div id="card2">
                 <h1>Sopas</h1>
-                <button><a href="/sopas/agregar">Agregar</a></button>
+                <button><a href="/sopas/agregar/{{idRestaurante}}">Agregar</a></button>
                 <div id="ver-todos">
-                    <button><a href="/sopas/listar">Ver todos</a></button>
+                    <button><a href="/sopas/listar/{{idRestaurante}}">Ver todos</a></button>
                 </div>
             </div>
             <div id="card3">
                 <h1>Postres</h1>
-                <button><a href="/postres/agregar">Agregar</a></button>
+                <button><a href="/postres/agregar/{{idRestaurante}}">Agregar</a></button>
                 <div id="ver-todos">
-                    <button id="ver-todos"><a href="/postres/listar">Ver todos</a></button>
+                    <button><a href="/postres/listar/{{idRestaurante}}">Ver todos</a></button>
                 </div>
             </div>
             <div id="card4">
                 <h1>Bebidas</h1>
-                <button><a href="/bebidas/agregar">Agregar</a></button>
+                <button><a href="/bebidas/agregar/{{idRestaurante}}">Agregar</a></button>
                 <div id="ver-todos">
-                    <button><a href="/bebidas/listar">Ver todos</a></button>
+                    <button><a href="/bebidas/listar/{{idRestaurante}}">Ver todos</a></button>
                 </div>
             </div>
             {{!-- <form action="menu/agregar/"method="post"></form>
